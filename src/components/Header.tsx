@@ -1,6 +1,8 @@
 import data from "../assets/locales/translations.json";
 import { useLanguage } from "../App";
 import { useState } from "react";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 type header = {
   darkMode: boolean;
@@ -10,6 +12,7 @@ type header = {
 export const Header = ({ darkMode, setDarkMode }: header) => {
   const { language } = useLanguage();
   const [showNavBar, setShowNavbar] = useState<boolean>(false);
+  const [showLanguage, setShowLanguage] = useState<boolean>(false);
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);
@@ -19,10 +22,14 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
     setShowNavbar(!showNavBar);
   };
 
+  const toggleLanguageBar = () => {
+    setShowLanguage(!showLanguage);
+  };
+
   const content = data[language];
 
   return (
-    <header className="flex justify-between items-center p-8 bg-white dark:bg-dark-brown">
+    <header className="flex justify-between items-center p-8 bg-white dark:bg-dark-brown relative font-firago">
       <div
         className="cursor-pointer border w-[7.4rem] h-[3.4rem] rounded-[4rem]  flex justify-center items-center gap-[0.89rem] border-primary dark:border-secondary lg:hidden"
         onClick={toggleTheme}
@@ -59,14 +66,36 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
         />
       </div>
 
-      <div className={`${showNavBar ? "block" : "hidden"} lg:block`}>
-        <nav className="">
-          <ul>
+      <div
+        className={`${
+          showNavBar ? "block" : "hidden"
+        } lg:block absolute top-[8.1rem] left-0 w-full bg-secondary font-bold text-[1.8rem] text-primary`}
+      >
+        <nav className="w-full p-[1.6rem] cursor-pointer">
+          <ul className="font-bold flex flex-col gap-[3.6rem]">
             {content.header.nav.map((li, index) => (
               <li key={index}>{li}</li>
             ))}
           </ul>
         </nav>
+
+        <div>
+          <div
+            onClick={toggleLanguageBar}
+            className="flex item-center gap-[0.5rem] cursor-pointer"
+          >
+            <span className="font-bold leading-[2.2rem]">
+              {language == "Ge" ? "ქარ" : "ENG"}
+            </span>
+            {showLanguage && <IoIosArrowDown className="h-[2.2rem]" />}
+            {!showLanguage && <IoIosArrowUp className="h-[2.2rem]" />}
+          </div>
+          {showLanguage && (
+            <span className="cursor-pointer font-medium">
+              {language == "En" ? "ქარ" : "ENG"}
+            </span>
+          )}
+        </div>
       </div>
 
       <div className="cursor-pointer lg:hidden" onClick={toggleNavBar}>
