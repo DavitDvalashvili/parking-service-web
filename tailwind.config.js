@@ -7,7 +7,18 @@ export default {
       fontFamily: {
         firago: ["Firago", "sans-serif"],
       },
-      colors: {},
+      colors: {
+        primary: "#063776",
+        secondary: "#FFD547",
+        white: "#FFFEFE",
+        black: "#1C1C1C",
+        dark: {
+          brown: "#1C1C1C",
+        },
+      },
+      screens: {
+        lg: "1440px",
+      },
       borderRadius: {},
       backgroundImage: {},
       boxShadow: {},

@@ -1,0 +1,20 @@
+{
+  "Ge": {
+    "header": {
+      "nav": [
+        "მთავარი",
+        "მომსახურება",
+        "მოწყობილობა",
+        "ჩვენს შესახებ",
+        "კონტაქტი"
+      ],
+      "button": "დაგვიკავშირდით"
+    }
+  },
+  "En": {
+    "header": {
+      "nav": ["Home", "Services", "Devices", "About Us", "Contact"],
+      "button": "Contact Us"
+    }
+  }
+}
