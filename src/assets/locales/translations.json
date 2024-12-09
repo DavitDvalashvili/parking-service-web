@@ -10,6 +10,10 @@
       ],
       "button": "დაგვიკავშირდით"
     },
+    "cover": {
+      "title": "მოქნილი პარკირება თქვენი ბიზნესისთვის",
+      "button": "დაგვიკავშირით"
+    },
     "footer": {
       "contact": "დაგვიკავშირდით",
       "email": "info@easypark.ge",
@@ -20,8 +24,12 @@
   },
   "En": {
     "header": {
-      "nav": ["Home", "Services", "Devices", "About Us", "Contact"],
-      "button": "Contact Us"
+      "nav": ["Home", "Services", "Devices", "About", "Contact"],
+      "button": "Contact"
+    },
+    "cover": {
+      "title": "Flexible parking for your business.",
+      "button": "Contact"
     },
     "footer": {
       "contact": "Contact",

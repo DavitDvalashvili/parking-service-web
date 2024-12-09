@@ -68,13 +68,13 @@ export const Footer = ({ darkMode }: footer) => {
       </div>
       <div>
         <div className="flex gap-[4rem] mb-[1.276rem]">
-          <a href="facebook.com" target="blank">
+          <a href="www.facebook.com" target="blank">
             <FaFacebookF className="w-[2.4rem] h-[2.4rem] cursor-pointer" />
           </a>
-          <a href="linkedin.com" target="blank">
+          <a href="www.linkedin.com" target="blank">
             <FaLinkedinIn className="w-[2.4rem] h-[2.4rem] cursor-pointer" />
           </a>
-          <a href="instagram.com" target="blank">
+          <a href="www.instagram.com" target="blank">
             <FaInstagram className="w-[2.4rem] h-[2.4rem] cursor-pointer" />
           </a>
         </div>

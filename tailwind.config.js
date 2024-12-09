@@ -19,8 +19,12 @@ export default {
       screens: {
         lg: "1440px",
       },
-      borderRadius: {},
-      backgroundImage: {},
+      backgroundImage: {
+        "mobile-light": "url('/images/cover/coverMobileLight.svg')",
+        "mobile-dark": "url('/images/cover/coverMobileDark.svg')",
+        "desktop-light": "url('/images/cover/coverDesktopLight.svg')",
+        "desktop-dark": "url('/images/cover/coverDesktopDark.svg')",
+      },
       boxShadow: {},
     },
   },
