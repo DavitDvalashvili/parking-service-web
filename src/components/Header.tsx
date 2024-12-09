@@ -10,7 +10,7 @@ type header = {
 };
 
 export const Header = ({ darkMode, setDarkMode }: header) => {
-  const { language } = useLanguage();
+  const { language, toggleLanguage } = useLanguage();
   const [showNavBar, setShowNavbar] = useState<boolean>(false);
   const [showLanguage, setShowLanguage] = useState<boolean>(false);
 
@@ -69,9 +69,9 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
       <div
         className={`${
           showNavBar ? "block" : "hidden"
-        } lg:block absolute top-[8.1rem] left-0 w-full bg-secondary font-bold text-[1.8rem] text-primary`}
+        } lg:block absolute top-[8.1rem] left-0 w-full bg-secondary font-bold text-[1.8rem] text-primary dark:text-black`}
       >
-        <nav className="w-full p-[1.6rem] cursor-pointer">
+        <nav className="w-full py-[1.6rem] px-8 cursor-pointer">
           <ul className="font-bold flex flex-col gap-[3.6rem]">
             {content.header.nav.map((li, index) => (
               <li key={index}>{li}</li>
@@ -79,22 +79,35 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
           </ul>
         </nav>
 
-        <div>
-          <div
-            onClick={toggleLanguageBar}
-            className="flex item-center gap-[0.5rem] cursor-pointer"
-          >
-            <span className="font-bold leading-[2.2rem]">
-              {language == "Ge" ? "ქარ" : "ENG"}
-            </span>
-            {showLanguage && <IoIosArrowDown className="h-[2.2rem]" />}
-            {!showLanguage && <IoIosArrowUp className="h-[2.2rem]" />}
+        <div
+          className=" mx-8 mt-[2.1rem] mb-[1.9rem] flex justify-start items-start gap-[0.5rem] cursor-pointer"
+          onClick={toggleLanguageBar}
+        >
+          <div className="flex flex-col item-center cursor-pointer gap-[1.7rem]">
+            {(showLanguage || language == "Ge") && (
+              <span
+                className={`font-bold leading-[2.2rem] ${
+                  language == "Ge" ? "font-bold order-first" : "font-normal"
+                }`}
+                onClick={() => toggleLanguage("Ge")}
+              >
+                ქარ
+              </span>
+            )}
+
+            {(showLanguage || language == "En") && (
+              <span
+                className={`font-bold leading-[2.2rem] ${
+                  language == "En" ? "font-bold order-first" : "font-normal"
+                }`}
+                onClick={() => toggleLanguage("En")}
+              >
+                En
+              </span>
+            )}
           </div>
-          {showLanguage && (
-            <span className="cursor-pointer font-medium">
-              {language == "En" ? "ქარ" : "ENG"}
-            </span>
-          )}
+          {showLanguage && <IoIosArrowDown className="h-[2.2rem]" />}
+          {!showLanguage && <IoIosArrowUp className="h-[2.2rem]" />}
         </div>
       </div>
 
