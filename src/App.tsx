@@ -43,7 +43,7 @@ const App = () => {
         <Route path="/device/:name" element={<Device />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-      <Footer />
+      <Footer darkMode={darkMode} />
     </Router>
   );
 };

@@ -9,12 +9,26 @@
         "კონტაქტი"
       ],
       "button": "დაგვიკავშირდით"
+    },
+    "footer": {
+      "contact": "დაგვიკავშირდით",
+      "email": "info@easypark.ge",
+      "phone": "+995 593 23 02 22",
+      "address": "მარშალ გელოვანის ქუჩა #2, თბილისი, საქართველო",
+      "terms": "წესები და პირობები"
     }
   },
   "En": {
     "header": {
       "nav": ["Home", "Services", "Devices", "About Us", "Contact"],
       "button": "Contact Us"
+    },
+    "footer": {
+      "contact": "Contact",
+      "email": "info@easypark.ge",
+      "phone": "+995 593 23 02 22",
+      "address": "Marshal Gelovani Street #2, Tbilisi, Georgia",
+      "terms": "Privacy and Policy"
     }
   }
 }

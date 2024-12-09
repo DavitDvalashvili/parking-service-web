@@ -26,7 +26,7 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
     setShowLanguage(!showLanguage);
   };
 
-  const content = data[language];
+  const headerContent = data[language].header;
 
   return (
     <header className="flex justify-between items-center p-8 bg-white dark:bg-dark-brown relative font-firago">
@@ -73,7 +73,7 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
       >
         <nav className="w-full py-[1.6rem] px-8 cursor-pointer">
           <ul className="font-bold flex flex-col gap-[3.6rem]">
-            {content.header.nav.map((li, index) => (
+            {headerContent.nav.map((li, index) => (
               <li key={index}>{li}</li>
             ))}
           </ul>
@@ -123,7 +123,7 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
       </div>
 
       <button className="text-[1.4rem] font-bold text-white bg-primary w-[16rem] h-[5rem] font-firago rounded-[1.5rem] hidden lg:inline-block ">
-        {content.header.button}
+        {headerContent.button}
       </button>
     </header>
   );
