@@ -24,6 +24,7 @@ export default {
         "mobile-dark": "url('/images/cover/coverMobileDark.svg')",
         "desktop-light": "url('/images/cover/coverDesktopLight.svg')",
         "desktop-dark": "url('/images/cover/coverDesktopDark.svg')",
+        "benefit-card": "url(./images/benefits/parkingbg.svg)",
       },
       boxShadow: {},
     },

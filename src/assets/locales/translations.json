@@ -59,6 +59,28 @@
         }
       ]
     },
+    "benefits": {
+      "benefits": [
+        {
+          "text": "Easy Park გამოირჩევა სანდო და ადაპტირებადი პარკირების მართვის სისტემით, რომელიც განკუთვნილია როგორც მცირე, ასევე დიდი ზომის საწარმოებისთვის;"
+        },
+        {
+          "text": "ადმინისტრაციული ხარჯების შემცირება: ავტომატიზირებული სისტემა გამორიცხავს ხელით მართვის საჭიროებას და ზოგავს დროისა და ფინანსურ რესურსებს;"
+        },
+        {
+          "text": "სწრაფი გადახდის შესაძლებლობა: გადახდა შესაძლებელია ნაღდი ფულით ან ბარათით გასასვლელ სადგურზე – მარტივად და სწრაფად;"
+        },
+        {
+          "text": "განვითარებული ადმინისტრაციული პანელი: აკონტროლეთ მნიშვნელოვანი მეტრიკები ჩვენს ინტერფეისში. დეტალური ანგარიშგება დაგეხმარებათ პარკირების სივრცეების ოპტიმიზაციაში;"
+        },
+        {
+          "text": "ჩვენი ტექნოლოგიის შემუშავებისას აქცენტი გაკეთებულია გამძლეობასა და სიმარტივეზე, რაც უზრუნველყოფს, რომ ნებისმიერი სერვისის საჭიროება სწრაფად და პროფესიონალურად იყოს დაკმაყოფილებული ადგილობრივი გუნდის მიერ."
+        }
+      ],
+      "title": "რატომ ჩვენ?",
+      "description": "რატომ უნდა აირჩიოთ Easy Park თქვენი ბიზნესისთვის?",
+      "text": "აირჩიეთ Easy Park და მიიღეთ სერვისი, რომელიც აერთიანებს ტექნოლოგიებს, ბიზნესზე ორიენტირებული უპირატესობებით."
+    },
     "footer": {
       "contact": "დაგვიკავშირდით",
       "email": "info@easypark.ge",
@@ -121,7 +143,28 @@
         }
       ]
     },
-
+    "benefits": {
+      "benefits": [
+        {
+          "text": "Reliable and adaptable parking management system: Suited for businesses of all sizes and types;"
+        },
+        {
+          "text": "Lower administrative costs: Automated systems eliminate the need for manual management, saving time and financial resources;"
+        },
+        {
+          "text": "Fast and secure payment: exit stations allow payments via cash or card – quick and easy;"
+        },
+        {
+          "text": "Advanced administrative panel: Control key metrics through our interface. Detailed reporting helps optimize parking spaces;"
+        },
+        {
+          "text": "Durable and simple technology: Our system is designed for resilience and ease of use, ensuring quick and professional service by a local team;"
+        }
+      ],
+      "title": "Why Us?",
+      "description": "Why choose Easy Park for your business?",
+      "text": "Choose Easy Park and enjoy a service combining advanced technology with business-oriented benefits."
+    },
     "footer": {
       "contact": "Contact",
       "email": "info@easypark.ge",

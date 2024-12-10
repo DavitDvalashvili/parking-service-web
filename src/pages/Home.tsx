@@ -1,7 +1,7 @@
 import data from "../assets/locales/translations.json";
 import { Services } from "../components/Home/Services";
 import { useLanguage } from "../App";
-import { WhyChooseUs } from "../components/Home/WhyChooseUs";
+import { Benefits } from "../components/Home/Benefits";
 
 export const Home = () => {
   const { language } = useLanguage();
@@ -17,7 +17,7 @@ export const Home = () => {
         <div className="w-full h-[26.3rem] bg-mobile-light dark:bg-mobile-dark bg-cover bg-top border-t-[0.001rem] border-white dark:border-dark-brown"></div>
       </section>
       <Services />
-      <WhyChooseUs />
+      <Benefits />
     </div>
   );
 };

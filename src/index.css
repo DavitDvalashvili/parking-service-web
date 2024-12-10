@@ -10,3 +10,19 @@ html {
 .font-feature {
   font-feature-settings: "case" on;
 }
+
+.swiper {
+  overflow: hidden;
+  max-width: screen;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: fit;
+  height: fit;
+}
