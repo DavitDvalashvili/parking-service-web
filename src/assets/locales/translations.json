@@ -14,6 +14,51 @@
       "title": "მოქნილი პარკირება თქვენი ბიზნესისთვის",
       "button": "დაგვიკავშირით"
     },
+    "services": {
+      "title": "მომსახურება",
+      "services": [
+        {
+          "image": "./images/services/monitoring.svg",
+          "service": "სივრცის მონიტორინგი",
+          "description": "მიმდინარე დროში სივრცეების მონიტორინგი",
+          "text": "მიმდინარე დროში, თვალყური ადევნეთ დაკავებული ადგილების რაოდენობას."
+        },
+        {
+          "image": "./images/services/paying.svg",
+          "service": "მოქნილი გადახდის პარამეტრები",
+          "description": "მოქნილი გადახდის პარამეტრები",
+          "text": "მომხმარებლებს შეუძლიათ გასასვლელში დამონტაჟებულ მოწყობილობასთან გადახდა, ნაღდი ფულით ან ბარათით, რაც ამარტივებს პროცესს."
+        },
+        {
+          "image": "./images/services/adminPanel.svg",
+          "service": "ადმინისტრაციული პანელი",
+          "description": "კომპლექსური ადმინისტრაციული პანელი",
+          "text": "მიიღეთ მნიშვნელოვანი სტატისტიკა და მეტრიკები, როგორიცაა: მიმდინარე დროში დაკავებული ადგილების რაოდენობა, მიმღებ და გამცემ მოწყობილობაში ბარათების რაოდენობის მონიტორინგი, დაჯამებული ან მიმდინარე თანხის მონიტორინგი."
+        },
+        {
+          "image": "./images/services/personalSystem.svg",
+          "service": "პერსონალიზებადი სისტემა",
+          "description": "პერსონალიზირებადი პარკირების მართვის სისტემა",
+          "text": "Easy Park შეიძლება ადაპტირდეს ნებისმიერი ზომის ან ტიპის სივრცეზე, რაც უზრუნველყოფს, თქვენი ობიექტის, უნიკალურ საჭიროებებზე მორგებულ კონფიგურაციას."
+        },
+        {
+          "image": "./images/services/support.svg",
+          "service": "ადგილობრივი მხარდაჭერა",
+          "description": "ადგილობრივი მხარდაჭერა",
+          "text": "ჩვენი ტექნიკის წარმოება და სერვისით უზრუნველყოფა ხდება საქართველოში, რაც უზრუნველყოფს სწრაფ და სანდო მხარდაჭერას თქვენი ოპერაციების შეუფერხებლად ფუნქციონირებისათვის. ამასთანავე ჩვენი გუნდი მუდმივად ზრუნავს სისტემის ახალი ფუნქციებით აღჭურვაზე."
+        },
+        {
+          "image": "./images/services/automatization.svg",
+          "service": "ავტომატიზირებული სისტემა",
+          "description": "ავტომატიზირებული სისტემა",
+          "text": "ავტომატიზირებული სისტემა გამორიცხავს ხელით მართვის საჭიროებას რაც ზოგავს ადამიანურ რესურსებს"
+        },
+        {
+          "image": "./images/services/statistics.svg",
+          "service": "სტატისტიკები "
+        }
+      ]
+    },
     "footer": {
       "contact": "დაგვიკავშირდით",
       "email": "info@easypark.ge",
@@ -31,6 +76,52 @@
       "title": "Flexible parking for your business.",
       "button": "Contact"
     },
+    "services": {
+      "title": "Services",
+      "services": [
+        {
+          "image": "./images/services/monitoring.svg",
+          "service": "Space Monitoring",
+          "description": "Real-time space monitoring",
+          "text": "Keep track of the number of occupied spaces in real time."
+        },
+        {
+          "image": "./images/services/paying.svg",
+          "service": "Flexible Payment Options",
+          "description": "Flexible payment options",
+          "text": "Users can pay at the exit terminal using cash or card, simplifying the process."
+        },
+        {
+          "image": "./images/services/adminPanel.svg",
+          "service": "Admin Panel",
+          "description": "Comprehensive admin panel",
+          "text": "Access critical statistics and metrics, such as the real-time number of occupied spaces, monitoring the number of cards in entry and exit devices, and tracking cumulative or current funds."
+        },
+        {
+          "image": "./images/services/personalSystem.svg",
+          "service": "Customizable System",
+          "description": "Customizable parking management system",
+          "text": "Easy Park can adapt to any size or type of space, ensuring a configuration tailored to the unique needs of your property."
+        },
+        {
+          "image": "./images/services/support.svg",
+          "service": "Local Support",
+          "description": "Local support",
+          "text": "Our equipment is manufactured and serviced in Georgia, providing quick and reliable support to ensure uninterrupted operations. Additionally, our team continuously enhances the system with new features."
+        },
+        {
+          "image": "./images/services/automatization.svg",
+          "service": "Automated System",
+          "description": "Automated system",
+          "text": "The automated system eliminates the need for manual management, saving human resources."
+        },
+        {
+          "image": "./images/services/statistics.svg",
+          "service": "Statistics"
+        }
+      ]
+    },
+
     "footer": {
       "contact": "Contact",
       "email": "info@easypark.ge",
