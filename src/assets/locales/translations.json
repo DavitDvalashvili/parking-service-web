@@ -74,7 +74,7 @@
           "text": "განვითარებული ადმინისტრაციული პანელი: აკონტროლეთ მნიშვნელოვანი მეტრიკები ჩვენს ინტერფეისში. დეტალური ანგარიშგება დაგეხმარებათ პარკირების სივრცეების ოპტიმიზაციაში;"
         },
         {
-          "text": "ჩვენი ტექნოლოგიის შემუშავებისას აქცენტი გაკეთებულია გამძლეობასა და სიმარტივეზე, რაც უზრუნველყოფს, რომ ნებისმიერი სერვისის საჭიროება სწრაფად და პროფესიონალურად იყოს დაკმაყოფილებული ადგილობრივი გუნდის მიერ."
+          "text": "ჩვენ გთავაზობთ გამძლე და  მარტივ ტექნოლოგიას, რაც უზრუნველყოფს, რომ ნებისმიერი სერვისის საჭიროება სწრაფად და პროფესიონალურად იყოს დაკმაყოფილებული ადგილობრივი გუნდის მიერ"
         }
       ],
       "title": "რატომ ჩვენ?",
@@ -100,6 +100,45 @@
         {
           "image": "./images/devices/device1.svg",
           "name": "device5"
+        }
+      ]
+    },
+    "contact": {
+      "title": "შეტყობინება",
+      "button": "გაგზავნა",
+      "labels": {
+        "firstName": "სახელი",
+        "lastName": "გვარი",
+        "email": "ელ-ფოსტა",
+        "phoneNumber": "საკონტაქტო ნომერი",
+        "message": "შეტყობინება"
+      },
+      "placeholders": {
+        "firstName": "სახელი",
+        "lastName": "გვარი",
+        "email": "ელ-ფოსტა",
+        "phoneNumber": "საკონტაქტო ნომერი",
+        "message": "შეტყობინება"
+      }
+    },
+    "faq": {
+      "title": "ხშირად დასმული კითხვები",
+      "faq": [
+        {
+          "question": "შეიძლება Easy Park-ის პერსონალიზაცია განსხვავებული ზომის ბიზნესებისთვის?",
+          "answer": "რა თქმა უნდა. Easy Park შექმნილია ნებისმიერი მასშტაბის დასახმარებლად, მცირე ბიზნესიდან დიდ საწარმოებამდე, რეგულირებადი ფუნქციებითა და კონფიგურაციებით."
+        },
+        {
+          "question": "როგორ მუშაობს სივრცეების რეალურ დროში მონიტორინგი ადმინისტრაციისთვის?",
+          "answer": "ჩვენი სისტემა აჩვენებს დაკავებული ადგილების რაოდენობას."
+        },
+        {
+          "question": "რა მონაცემებს გვთავაზობს ადმინისტრაციული პანელი?",
+          "answer": "ადმინისტრაციული პანელი გთავაზობთ სხვადასხვა მეტრიკებს, მათ შორის მოწყობილობაში საერთო ბარათების რაოდენობა; საპარკინგე სივრცის გამოყენების სიხშირე, სასურველი დროის მიხედვთ; დაჯამებული ან მიმდინარე თანხის ჩვენება, ბარათების რაოდენობები მოწყობილობებში."
+        },
+        {
+          "question": "როგორ ხდება გადახდა გასვლისას?",
+          "answer": "გასასვლელთან მომხმარებლებს შეუძლიათ ბარათის დაბრუნების შემდეგ გადახდა ნაღდი ფულით ან ბარათით, რაც პროცესს შეუფერხებელს ხდის."
         }
       ]
     },
@@ -206,6 +245,45 @@
         {
           "image": "./images/devices/device1.svg",
           "name": "device5"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "button": "send",
+      "labels": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "message": "Message"
+      },
+      "placeholders": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "message": "Message"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "faq": [
+        {
+          "question": "Can Easy Park be customized for businesses of different sizes?",
+          "answer": "Absolutely. Easy Park is designed to support businesses of all scales, from small to large enterprises, with adjustable features and configurations."
+        },
+        {
+          "question": "How does real-time space monitoring work for administration?",
+          "answer": "Our system displays the number of occupied spaces in real time."
+        },
+        {
+          "question": "What data does the administrative panel provide?",
+          "answer": "Metrics include: Total cards in devices; Parking space usage frequency based on preferred times; Summary or ongoing payment details."
+        },
+        {
+          "question": "How is payment processed at exit points?",
+          "answer": "Customers can pay with cash or card after returning their card at the exit, ensuring a smooth process."
         }
       ]
     },

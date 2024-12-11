@@ -3,6 +3,8 @@ import { Services } from "../components/Home/Services";
 import { useLanguage } from "../App";
 import { Benefits } from "../components/Home/Benefits";
 import { Devices } from "../components/Home/Devices";
+//import { Contact } from "../components/Home/Contact";
+import { FAQ } from "../components/Home/FAQ";
 
 export const Home = () => {
   const { language } = useLanguage();
@@ -20,6 +22,8 @@ export const Home = () => {
       <Services />
       <Benefits />
       <Devices />
+      <FAQ />
+      {/* <Contact /> */}
       {/* <div className="bg-green-500 w-[5rem] h-[5rem] sticky bottom-0 left-0">
         <button>დაგვიკავშირდით</button>
       </div> */}
