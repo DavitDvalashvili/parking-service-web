@@ -81,6 +81,28 @@
       "description": "რატომ უნდა აირჩიოთ Easy Park თქვენი ბიზნესისთვის?",
       "text": "აირჩიეთ Easy Park და მიიღეთ სერვისი, რომელიც აერთიანებს ტექნოლოგიებს, ბიზნესზე ორიენტირებული უპირატესობებით."
     },
+    "devices": {
+      "title": "მოწყობილობები",
+      "button": "დეტალურად",
+      "devices": [
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device2"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device3"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device4"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device5"
+        }
+      ]
+    },
     "footer": {
       "contact": "დაგვიკავშირდით",
       "email": "info@easypark.ge",
@@ -164,6 +186,28 @@
       "title": "Why Us?",
       "description": "Why choose Easy Park for your business?",
       "text": "Choose Easy Park and enjoy a service combining advanced technology with business-oriented benefits."
+    },
+    "devices": {
+      "title": "Devices",
+      "button": "In Detail",
+      "devices": [
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device2"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device3"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device4"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device5"
+        }
+      ]
     },
     "footer": {
       "contact": "Contact",

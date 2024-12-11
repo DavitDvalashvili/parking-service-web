@@ -12,7 +12,7 @@ export const Benefits = () => {
       <h3 className="font-bold text-[2rem] font-feature text-center capitalize dark:text-white">
         {benefitContent.title}
       </h3>
-      <div className="mt-4 mb-8 text-center mx-[6.7rem] font-normal text-[1.6rem] leading-[2rem] dark:text-white">
+      <div className="mt-4 mb-8 text-center mx-[6.7rem] font-normal text-[1.6rem] leading-[2rem] dark:text-white ">
         {benefitContent.description}
       </div>
       <Swiper slidesPerView={"auto"} spaceBetween={0}>

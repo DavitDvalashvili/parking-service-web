@@ -24,9 +24,11 @@ export default {
         "mobile-dark": "url('/images/cover/coverMobileDark.svg')",
         "desktop-light": "url('/images/cover/coverDesktopLight.svg')",
         "desktop-dark": "url('/images/cover/coverDesktopDark.svg')",
-        "benefit-card": "url(./images/benefits/parkingbg.svg)",
+        "benefit-card": "url(./images/benefits/parkingBg.svg)",
       },
-      boxShadow: {},
+      boxShadow: {
+        customShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [],

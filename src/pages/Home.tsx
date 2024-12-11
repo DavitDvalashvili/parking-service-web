@@ -2,6 +2,7 @@ import data from "../assets/locales/translations.json";
 import { Services } from "../components/Home/Services";
 import { useLanguage } from "../App";
 import { Benefits } from "../components/Home/Benefits";
+import { Devices } from "../components/Home/Devices";
 
 export const Home = () => {
   const { language } = useLanguage();
@@ -18,6 +19,10 @@ export const Home = () => {
       </section>
       <Services />
       <Benefits />
+      <Devices />
+      {/* <div className="bg-green-500 w-[5rem] h-[5rem] sticky bottom-0 left-0">
+        <button>დაგვიკავშირდით</button>
+      </div> */}
     </div>
   );
 };

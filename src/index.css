@@ -5,6 +5,8 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  height: screen;
+  overflow-y: scroll;
 }
 
 .font-feature {
