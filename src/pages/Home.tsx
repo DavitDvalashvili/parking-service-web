@@ -3,7 +3,7 @@ import { Services } from "../components/Home/Services";
 import { useLanguage } from "../App";
 import { Benefits } from "../components/Home/Benefits";
 import { Devices } from "../components/Home/Devices";
-//import { Contact } from "../components/Home/Contact";
+import { Contact } from "../components/Home/Contact";
 import { FAQ } from "../components/Home/FAQ";
 import { ProcessReview } from "../components/Home/ProcessReview";
 
@@ -13,8 +13,8 @@ export const Home = () => {
   const coverContent = data[language].cover;
 
   return (
-    <div>
-      <section className="font-bold text-[2rem] font-firago font-feature pt-4 text-black dark:text-white dark:bg-dark-brown">
+    <div className="dark:bg-dark-brown">
+      <section className="font-bold text-[2rem] font-firago font-feature pt-4 text-black dark:text-white dark:bg-dark-brown dark:mt-[-0.1rem]">
         <h2 className="mx-auto text-center uppercase max-w-[26.1rem]">
           {coverContent.title}
         </h2>
@@ -25,7 +25,7 @@ export const Home = () => {
       <Devices />
       <ProcessReview />
       <FAQ />
-      {/* <Contact /> */}
+      <Contact />
       {/* <div className="bg-green-500 w-[5rem] h-[5rem] sticky bottom-0 left-0">
         <button>დაგვიკავშირდით</button>
       </div> */}

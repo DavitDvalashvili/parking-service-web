@@ -1,4 +1,6 @@
 import "@fontsource/firago";
+import "@fontsource/firago/400.css";
+import "@fontsource/firago/500.css";
 import { create } from "zustand";
 import { useState } from "react";
 import { useEffect } from "react";

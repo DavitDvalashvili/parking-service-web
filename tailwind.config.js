@@ -12,9 +12,11 @@ export default {
         secondary: "#FFD547",
         white: "#FFFEFE",
         black: "#1C1C1C",
+        errorRed: "#FF0000",
         dark: {
           brown: "#1C1C1C",
         },
+        placeholder: "#898A8A",
       },
       screens: {
         lg: "1440px",

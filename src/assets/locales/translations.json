@@ -118,7 +118,7 @@
         "lastName": "გვარი",
         "email": "ელ-ფოსტა",
         "phoneNumber": "საკონტაქტო ნომერი",
-        "message": "შეტყობინება"
+        "message": "შეტყობინება..."
       }
     },
     "faq": {
@@ -271,7 +271,7 @@
         "lastName": "Last Name",
         "email": "Email",
         "phoneNumber": "Phone Number",
-        "message": "Message"
+        "message": "Message..."
       }
     },
     "faq": {

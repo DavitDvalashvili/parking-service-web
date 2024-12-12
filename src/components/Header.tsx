@@ -29,7 +29,7 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
   const headerContent = data[language].header;
 
   return (
-    <header className="flex justify-between items-center p-8 bg-white dark:bg-dark-brown relative font-firago">
+    <header className="flex justify-between items-center p-8 bg-white dark:bg-dark-brown relative font-firago ">
       <div
         className="cursor-pointer border w-[7.4rem] h-[3.4rem] rounded-[4rem]  flex justify-center items-center gap-[0.89rem] border-primary dark:border-secondary lg:hidden"
         onClick={toggleTheme}
