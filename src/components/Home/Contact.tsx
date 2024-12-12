@@ -29,8 +29,10 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-red-700">
-      <h3>{contactContent.title}</h3>
+    <div className="bg-white font-firago">
+      <h3 className="text-[2rem] text-center font-bold uppercase font-feature leading-[2.4rem]">
+        {contactContent.title}
+      </h3>
       <form onSubmit={handleSubmit}>
         <div>
           <div>

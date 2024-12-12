@@ -142,6 +142,14 @@
         }
       ]
     },
+    "process": {
+      "title": "როგორ მუშაობს?",
+      "takeCard": "აიღე ბარათი",
+      "parking": "დაპარკინგდი",
+      "returnCard": "დააბრუნე ბარათი",
+      "paying": "გადაიხადე სასურველი ანგარიშსწორებით",
+      "thanking": "გმადლობთ, რომ სარგებლობთ ჩვენი სერვისით!"
+    },
     "footer": {
       "contact": "დაგვიკავშირდით",
       "email": "info@easypark.ge",
@@ -286,6 +294,14 @@
           "answer": "Customers can pay with cash or card after returning their card at the exit, ensuring a smooth process."
         }
       ]
+    },
+    "process": {
+      "title": "How It Works?",
+      "takeCard": "Take a card",
+      "parking": "Park your vehicle",
+      "returnCard": "Return the card",
+      "paying": "Pay using your preferred method",
+      "thanking": "Thank you for choosing Easy Park!"
     },
     "footer": {
       "contact": "Contact",

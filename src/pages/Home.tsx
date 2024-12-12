@@ -5,6 +5,7 @@ import { Benefits } from "../components/Home/Benefits";
 import { Devices } from "../components/Home/Devices";
 //import { Contact } from "../components/Home/Contact";
 import { FAQ } from "../components/Home/FAQ";
+import { ProcessReview } from "../components/Home/ProcessReview";
 
 export const Home = () => {
   const { language } = useLanguage();
@@ -22,6 +23,7 @@ export const Home = () => {
       <Services />
       <Benefits />
       <Devices />
+      <ProcessReview />
       <FAQ />
       {/* <Contact /> */}
       {/* <div className="bg-green-500 w-[5rem] h-[5rem] sticky bottom-0 left-0">
