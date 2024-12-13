@@ -1,4 +1,5 @@
 import data from "../assets/locales/translations.json";
+import { HashLink } from "react-router-hash-link";
 import { useLanguage } from "../App";
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
@@ -29,7 +30,7 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
   const headerContent = data[language].header;
 
   return (
-    <header className="flex justify-between items-center p-8 bg-white dark:bg-dark-brown relative font-firago ">
+    <header className="flex justify-between items-center p-8 bg-white dark:bg-dark-brown font-firago fixed z-20 top-0 left-0 w-full">
       <div
         className="cursor-pointer border w-[7.4rem] h-[3.4rem] rounded-[4rem]  flex justify-center items-center gap-[0.89rem] border-primary dark:border-secondary lg:hidden"
         onClick={toggleTheme}
@@ -73,9 +74,21 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
       >
         <nav className="w-full py-[1.6rem] px-8 cursor-pointer">
           <ul className="font-bold flex flex-col gap-[3.6rem]">
-            {headerContent.nav.map((li, index) => (
-              <li key={index}>{li}</li>
-            ))}
+            <li onClick={toggleNavBar}>
+              <HashLink to="#main">{headerContent.nav.main}</HashLink>
+            </li>
+            <li onClick={toggleNavBar}>
+              <HashLink to="#service">{headerContent.nav.service}</HashLink>
+            </li>
+            <li onClick={toggleNavBar}>
+              <HashLink to="#device">{headerContent.nav.device}</HashLink>
+            </li>
+            <li onClick={toggleNavBar}>
+              <HashLink to="#about">{headerContent.nav.about}</HashLink>
+            </li>
+            <li onClick={toggleNavBar}>
+              <HashLink to="#contact">{headerContent.nav.contact}</HashLink>
+            </li>
           </ul>
         </nav>
 
@@ -89,7 +102,10 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
                 className={`font-bold leading-[2.2rem] ${
                   language == "Ge" ? "font-bold order-first" : "font-normal"
                 }`}
-                onClick={() => toggleLanguage("Ge")}
+                onClick={() => {
+                  toggleLanguage("Ge");
+                  showLanguage && toggleNavBar();
+                }}
               >
                 ქარ
               </span>
@@ -100,7 +116,10 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
                 className={`font-bold leading-[2.2rem] ${
                   language == "En" ? "font-bold order-first" : "font-normal"
                 }`}
-                onClick={() => toggleLanguage("En")}
+                onClick={() => {
+                  toggleLanguage("En");
+                  showLanguage && toggleNavBar();
+                }}
               >
                 En
               </span>

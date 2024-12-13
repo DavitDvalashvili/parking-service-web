@@ -12,7 +12,10 @@ export const Services = () => {
   const serviceContent = data[language].services;
 
   return (
-    <section className="bg-white text-black dark:bg-dark-brown dark:text-white px-8 font-firago font-bold  uppercase ">
+    <div
+      className="bg-white text-black dark:bg-dark-brown dark:text-white px-8 font-firago font-bold  uppercase scroll-mt-[8.1rem] "
+      id="service"
+    >
       <h3 className="pt-[0.7rem] pb-[2rem] text-center text-[2rem]">
         {serviceContent.title}
       </h3>
@@ -55,6 +58,6 @@ export const Services = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };

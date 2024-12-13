@@ -70,7 +70,10 @@ export const Contact = ({ variant }: contact) => {
   };
 
   return (
-    <div className="bg-white dark:bg-dark-brown font-firago px-8 pb-[3rem] ">
+    <div
+      className="bg-white dark:bg-dark-brown font-firago px-8 pb-[3rem] scroll-mt-[8.1rem]"
+      id="contact"
+    >
       <h3 className="text-[2rem] text-center font-bold uppercase font-feature leading-[2.4rem] pb-[1.8rem] dark:text-white">
         {contactContent.title}
       </h3>
@@ -78,7 +81,7 @@ export const Contact = ({ variant }: contact) => {
         <div className="flex flex-col gap-4">
           <div
             className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
-              ${isPopup ? "dark:bg-dark-brown dark:border-white " : "bg-white "}
+              ${isPopup ? "dark:bg-dark-brown " : "bg-white "}
                ${
                  firstNameErr
                    ? " border-errorRed dark:border-errorRed "
@@ -101,14 +104,14 @@ export const Contact = ({ variant }: contact) => {
               }
               className={`w-full h-8 focus:outline-none text-black font-medium ${
                 firstNameErr
-                  ? "placeholder:text-errorRed"
+                  ? "placeholder:text-errorRed "
                   : "placeholder:text-placeholder"
               } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}`}
             />
           </div>
           <div
             className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
-              ${isPopup ? "dark:bg-dark-brown dark:border-white " : "bg-white "}
+              ${isPopup ? "dark:bg-dark-brown " : "bg-white "}
                ${
                  firstNameErr
                    ? " border-errorRed dark:border-errorRed "
@@ -138,7 +141,7 @@ export const Contact = ({ variant }: contact) => {
         <div className="flex flex-col gap-4">
           <div
             className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
-              ${isPopup ? "dark:bg-dark-brown dark:border-white " : "bg-white "}
+              ${isPopup ? "dark:bg-dark-brown  " : "bg-white "}
                ${
                  firstNameErr
                    ? " border-errorRed dark:border-errorRed "
@@ -166,7 +169,7 @@ export const Contact = ({ variant }: contact) => {
           </div>
           <div
             className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
-              ${isPopup ? "dark:bg-dark-brown dark:border-white " : "bg-white "}
+              ${isPopup ? "dark:bg-dark-brown" : "bg-white "}
                ${
                  firstNameErr
                    ? " border-errorRed dark:border-errorRed "
@@ -197,11 +200,7 @@ export const Contact = ({ variant }: contact) => {
         </div>
         <div
           className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 dark:border
-            ${
-              isPopup
-                ? "dark:bg-dark-brown dark:border-white "
-                : "dark:bg-white"
-            }
+            ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white"}
           `}
         >
           {/* <label htmlFor="message">{contactContent.labels.message}</label> */}

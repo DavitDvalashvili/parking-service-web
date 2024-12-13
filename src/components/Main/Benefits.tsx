@@ -8,7 +8,10 @@ export const Benefits = () => {
   const benefitContent = data[language].benefits;
 
   return (
-    <section className="bg-white dark:bg-dark-brown text-black  pl-[1.6rem] font-firago pt-8">
+    <div
+      className="bg-white dark:bg-dark-brown text-black  pl-[1.6rem] font-firago pt-8 scroll-mt-[8.1rem]"
+      id="about"
+    >
       <h3 className="font-bold text-[2rem] font-feature text-center capitalize dark:text-white">
         {benefitContent.title}
       </h3>
@@ -32,6 +35,6 @@ export const Benefits = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
 };

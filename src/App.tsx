@@ -38,18 +38,20 @@ const App = () => {
   }, [darkMode]);
 
   return (
-    <Router>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Routes>
-        <Route
-          path="/"
-          element={<Main darkMode={darkMode} setDarkMode={setDarkMode} />}
-        />
-        <Route path="/device/:name" element={<Device />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-      <Footer darkMode={darkMode} />
-    </Router>
+    <main className="relative">
+      <Router>
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Routes>
+          <Route
+            path="/"
+            element={<Main darkMode={darkMode} setDarkMode={setDarkMode} />}
+          />
+          <Route path="/device/:name" element={<Device />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+        <Footer darkMode={darkMode} />
+      </Router>
+    </main>
   );
 };
 

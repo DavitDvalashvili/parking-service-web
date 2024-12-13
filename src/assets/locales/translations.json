@@ -1,13 +1,13 @@
 {
   "Ge": {
     "header": {
-      "nav": [
-        "მთავარი",
-        "მომსახურება",
-        "მოწყობილობა",
-        "ჩვენს შესახებ",
-        "კონტაქტი"
-      ],
+      "nav": {
+        "main": "მთავარი",
+        "service": "სერვისები",
+        "device": "მოწყობილობები",
+        "about": "ჩვენს შესახებ",
+        "contact": "კონტაქტი"
+      },
       "button": "დაგვიკავშირდით"
     },
     "cover": {
@@ -160,7 +160,13 @@
   },
   "En": {
     "header": {
-      "nav": ["Home", "Services", "Devices", "About", "Contact"],
+      "nav": {
+        "main": "main",
+        "service": "service",
+        "device": "device",
+        "about": "about",
+        "contact": "contact"
+      },
       "button": "Contact"
     },
     "cover": {
