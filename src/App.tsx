@@ -10,7 +10,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import { Home } from "./pages/Home";
+import { Main } from "./pages/Main";
 import { Device } from "./pages/Device";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -41,7 +41,10 @@ const App = () => {
     <Router>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Main darkMode={darkMode} setDarkMode={setDarkMode} />}
+        />
         <Route path="/device/:name" element={<Device />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

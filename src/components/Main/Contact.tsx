@@ -1,8 +1,12 @@
 import data from "../../assets/locales/translations.json";
 import { useLanguage } from "../../App";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-export const Contact = () => {
+type contact = {
+  variant: "popup" | "landing";
+};
+export const Contact = ({ variant }: contact) => {
+  const isPopup = variant === "popup";
   const [firstNameErr, setFirstNameErr] = useState<string | undefined>(
     undefined
   );
@@ -66,16 +70,21 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-dark-brown font-firago px-8 pb-[3rem]">
+    <div className="bg-white dark:bg-dark-brown font-firago px-8 pb-[3rem] ">
       <h3 className="text-[2rem] text-center font-bold uppercase font-feature leading-[2.4rem] pb-[1.8rem] dark:text-white">
         {contactContent.title}
       </h3>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 ">
         <div className="flex flex-col gap-4">
           <div
-            className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 dark:bg-white ${
-              firstNameErr ? "border border-errorRed" : ""
-            }`}
+            className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
+              ${isPopup ? "dark:bg-dark-brown dark:border-white " : "bg-white "}
+               ${
+                 firstNameErr
+                   ? " border-errorRed dark:border-errorRed "
+                   : "border-white"
+               }
+            `}
           >
             {/* <label htmlFor="firstName">{contactContent.labels.firstName}</label> */}
             <span className=" hidden group-hover:block">{firstNameErr}</span>
@@ -94,13 +103,18 @@ export const Contact = () => {
                 firstNameErr
                   ? "placeholder:text-errorRed"
                   : "placeholder:text-placeholder"
-              }`}
+              } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}`}
             />
           </div>
           <div
-            className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 dark:bg-white ${
-              lastNameErr ? "border border-errorRed" : ""
-            }`}
+            className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
+              ${isPopup ? "dark:bg-dark-brown dark:border-white " : "bg-white "}
+               ${
+                 firstNameErr
+                   ? " border-errorRed dark:border-errorRed "
+                   : "border-white"
+               }
+            `}
           >
             {/* <label htmlFor="lastName">{contactContent.labels.lastName}</label> */}
             <input
@@ -116,15 +130,21 @@ export const Contact = () => {
                 lastNameErr
                   ? "placeholder:text-errorRed"
                   : "placeholder:text-placeholder"
-              }`}
+              } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
+              `}
             />
           </div>
         </div>
         <div className="flex flex-col gap-4">
           <div
-            className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 dark:bg-white ${
-              emailErr ? "border border-errorRed" : ""
-            }`}
+            className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
+              ${isPopup ? "dark:bg-dark-brown dark:border-white " : "bg-white "}
+               ${
+                 firstNameErr
+                   ? " border-errorRed dark:border-errorRed "
+                   : "border-white"
+               }
+            `}
           >
             {/* <label htmlFor="email">{contactContent.labels.email}</label> */}
             <input
@@ -140,13 +160,19 @@ export const Contact = () => {
                 emailErr
                   ? "placeholder:text-errorRed"
                   : "placeholder:text-placeholder"
-              }`}
+              } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
+              `}
             />
           </div>
           <div
-            className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 dark:bg-white ${
-              numberErr ? "border border-errorRed" : ""
-            }`}
+            className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
+              ${isPopup ? "dark:bg-dark-brown dark:border-white " : "bg-white "}
+               ${
+                 firstNameErr
+                   ? " border-errorRed dark:border-errorRed "
+                   : "border-white"
+               }
+            `}
           >
             {/* <label htmlFor="phoneNumber">
               {contactContent.labels.phoneNumber}
@@ -164,11 +190,20 @@ export const Contact = () => {
                 numberErr
                   ? "placeholder:text-errorRed"
                   : "placeholder:text-placeholder"
-              }`}
+              } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
+              `}
             />
           </div>
         </div>
-        <div className="rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 dark:bg-white">
+        <div
+          className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 dark:border
+            ${
+              isPopup
+                ? "dark:bg-dark-brown dark:border-white "
+                : "dark:bg-white"
+            }
+          `}
+        >
           {/* <label htmlFor="message">{contactContent.labels.message}</label> */}
           <textarea
             onChange={handleChange}
@@ -176,13 +211,15 @@ export const Contact = () => {
             id="message"
             value={formData.message}
             placeholder={contactContent.placeholders.message}
-            className="w-full h-[5.6rem] focus:outline-none placeholder:text-placeholder text-black font-medium "
+            className={`${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
+              w-full h-[5.6rem] focus:outline-none placeholder:text-placeholder text-black font-medium`}
           />
         </div>
         <button
           type="submit"
-          className="mt-4  text-[1.2rem] leading-8 font-medium text-white bg-primary dark:text-black dark:bg-secondary 
-          w-[19.7rem] h-[4.1rem] rounded-[2rem] mx-auto cursor-pointer border border-[#FFCA40] uppercase"
+          className={`mt-4  text-[1.2rem] leading-8 font-medium text-white bg-primary dark:text-black
+             dark:bg-secondary w-[19.7rem] h-[4.1rem] rounded-[2rem] mx-auto cursor-pointer border border-[#FFCA40] 
+             uppercase ${isPopup ? "w-full" : ""}`}
           onClick={() => {
             handleError();
           }}
