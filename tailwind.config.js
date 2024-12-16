@@ -20,6 +20,7 @@ export default {
       },
       screens: {
         lg: "1440px",
+        xl: "1920px",
       },
       backgroundImage: {
         "mobile-light": "url('/images/cover/coverMobileLight.svg')",
