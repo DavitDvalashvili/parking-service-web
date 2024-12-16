@@ -1,5 +1,5 @@
 import data from "../../assets/locales/translations.json";
-import { useLanguage } from "../../App";
+import { useParking } from "../../App";
 import { useState } from "react";
 
 type contact = {
@@ -14,7 +14,7 @@ export const Contact = ({ variant }: contact) => {
   const [emailErr, setEmailErr] = useState<string | undefined>(undefined);
   const [numberErr, setNumberErr] = useState<string | undefined>(undefined);
 
-  const { language } = useLanguage();
+  const { language } = useParking();
 
   const contactContent = data[language].contact;
 
@@ -57,15 +57,15 @@ export const Contact = ({ variant }: contact) => {
       formData.phoneNumber === ""
         ? "ველის შევსება სავალდებულოა"
         : !mobileRegex.test(formData.phoneNumber)
-        ? "ტელეფონის ნომრის ფორმატი არასწორია"
-        : undefined
+          ? "ტელეფონის ნომრის ფორმატი არასწორია"
+          : undefined
     );
     setEmailErr(
       formData.email === ""
         ? "ველის შევსება სავალდებულოა"
         : !emailRegex.test(formData.email)
-        ? "მეილის ფორმატი არასწორია"
-        : undefined
+          ? "მეილის ფორმატი არასწორია"
+          : undefined
     );
   };
 
@@ -82,11 +82,10 @@ export const Contact = ({ variant }: contact) => {
           <div
             className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
               ${isPopup ? "dark:bg-dark-brown " : "bg-white "}
-               ${
-                 firstNameErr
-                   ? " border-errorRed dark:border-errorRed "
-                   : "border-white"
-               }
+               ${firstNameErr
+                ? " border-errorRed dark:border-errorRed "
+                : "border-white"
+              }
             `}
           >
             {/* <label htmlFor="firstName">{contactContent.labels.firstName}</label> */}
@@ -102,21 +101,19 @@ export const Contact = ({ variant }: contact) => {
                   ? firstNameErr
                   : contactContent.placeholders.firstName
               }
-              className={`w-full h-8 focus:outline-none text-black font-medium ${
-                firstNameErr
+              className={`w-full h-8 focus:outline-none text-black font-medium ${firstNameErr
                   ? "placeholder:text-errorRed "
                   : "placeholder:text-placeholder"
-              } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}`}
+                } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}`}
             />
           </div>
           <div
             className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
               ${isPopup ? "dark:bg-dark-brown " : "bg-white "}
-               ${
-                 firstNameErr
-                   ? " border-errorRed dark:border-errorRed "
-                   : "border-white"
-               }
+               ${firstNameErr
+                ? " border-errorRed dark:border-errorRed "
+                : "border-white"
+              }
             `}
           >
             {/* <label htmlFor="lastName">{contactContent.labels.lastName}</label> */}
@@ -129,11 +126,10 @@ export const Contact = ({ variant }: contact) => {
               placeholder={
                 lastNameErr ? lastNameErr : contactContent.placeholders.lastName
               }
-              className={`w-full h-8 focus:outline-none text-black font-medium ${
-                lastNameErr
+              className={`w-full h-8 focus:outline-none text-black font-medium ${lastNameErr
                   ? "placeholder:text-errorRed"
                   : "placeholder:text-placeholder"
-              } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
+                } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
               `}
             />
           </div>
@@ -142,11 +138,10 @@ export const Contact = ({ variant }: contact) => {
           <div
             className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
               ${isPopup ? "dark:bg-dark-brown  " : "bg-white "}
-               ${
-                 firstNameErr
-                   ? " border-errorRed dark:border-errorRed "
-                   : "border-white"
-               }
+               ${firstNameErr
+                ? " border-errorRed dark:border-errorRed "
+                : "border-white"
+              }
             `}
           >
             {/* <label htmlFor="email">{contactContent.labels.email}</label> */}
@@ -159,22 +154,20 @@ export const Contact = ({ variant }: contact) => {
               placeholder={
                 emailErr ? emailErr : contactContent.placeholders.email
               }
-              className={`w-full h-8 focus:outline-none text-black font-medium ${
-                emailErr
+              className={`w-full h-8 focus:outline-none text-black font-medium ${emailErr
                   ? "placeholder:text-errorRed"
                   : "placeholder:text-placeholder"
-              } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
+                } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
               `}
             />
           </div>
           <div
             className={`rounded-[2rem] shadow-customShadow py-[1.1rem] px-4 border
               ${isPopup ? "dark:bg-dark-brown" : "bg-white "}
-               ${
-                 firstNameErr
-                   ? " border-errorRed dark:border-errorRed "
-                   : "border-white"
-               }
+               ${firstNameErr
+                ? " border-errorRed dark:border-errorRed "
+                : "border-white"
+              }
             `}
           >
             {/* <label htmlFor="phoneNumber">
@@ -189,11 +182,10 @@ export const Contact = ({ variant }: contact) => {
               placeholder={
                 numberErr ? numberErr : contactContent.placeholders.phoneNumber
               }
-              className={`w-full h-8 focus:outline-none text-black font-medium ${
-                numberErr
+              className={`w-full h-8 focus:outline-none text-black font-medium ${numberErr
                   ? "placeholder:text-errorRed"
                   : "placeholder:text-placeholder"
-              } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
+                } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white "}
               `}
             />
           </div>

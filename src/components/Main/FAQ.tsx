@@ -1,11 +1,11 @@
 import data from "../../assets/locales/translations.json";
 import { BiMinus } from "react-icons/bi";
 import { BiPlus } from "react-icons/bi";
-import { useLanguage } from "../../App";
+import { useParking } from "../../App";
 import { useState } from "react";
 
 export const FAQ = () => {
-  const { language } = useLanguage();
+  const { language } = useParking();
   const [activeQuestion, setActiveQuestion] = useState<number | undefined>(
     undefined
   );

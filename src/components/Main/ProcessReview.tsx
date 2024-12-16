@@ -1,8 +1,8 @@
 import data from "../../assets/locales/translations.json";
-import { useLanguage } from "../../App";
+import { useParking } from "../../App";
 
 export const ProcessReview = () => {
-  const { language } = useLanguage();
+  const { language } = useParking();
 
   const processContent = data[language].process;
 

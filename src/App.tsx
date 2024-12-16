@@ -2,56 +2,40 @@ import "@fontsource/firago";
 import "@fontsource/firago/400.css";
 import "@fontsource/firago/500.css";
 import { create } from "zustand";
-import { useState } from "react";
-import { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
-import { Main } from "./pages/Main";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
 import { Device } from "./pages/Device";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import PageNotFound from "./pages/PageNotFound";
+import { Main } from "./pages/Main";
+import News from "./pages/News";
 
 // Language store
-type UseLanguage = {
+type UseParking = {
   language: "Ge" | "En";
   toggleLanguage: (language: "Ge" | "En") => void;
+  darkMode: boolean;
+  toggleDarkMode: (darkMode: boolean) => void;
 };
 
-export const useLanguage = create<UseLanguage>((set) => ({
+export const useParking = create<UseParking>((set) => ({
   language: "Ge",
   toggleLanguage: (language: "Ge" | "En") => set({ language }),
+  darkMode: false,
+  toggleDarkMode: (darkMode: boolean) => set({ darkMode }),
 }));
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
-
   return (
-    <main className="relative">
-      <Router>
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Routes>
-          <Route
-            path="/"
-            element={<Main darkMode={darkMode} setDarkMode={setDarkMode} />}
-          />
+    <Router>
+      <Routes>
+        <Route element={<Main />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/news" element={<News />} />
           <Route path="/device/:name" element={<Device />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-        <Footer darkMode={darkMode} />
-      </Router>
-    </main>
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </Router>
   );
 };
 

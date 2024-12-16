@@ -1,15 +1,12 @@
 import data from "../assets/locales/translations.json";
-import { useLanguage } from "../App";
+import { useParking } from "../App";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
-type footer = {
-  darkMode: boolean;
-};
 
-export const Footer = ({ darkMode }: footer) => {
-  const { language } = useLanguage();
+export const Footer = () => {
+  const { language, darkMode } = useParking();
 
   const footerContent = data[language].footer;
 

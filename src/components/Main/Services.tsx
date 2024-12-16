@@ -1,10 +1,10 @@
 import data from "../../assets/locales/translations.json";
 import { useState } from "react";
 
-import { useLanguage } from "../../App";
+import { useParking } from "../../App";
 
 export const Services = () => {
-  const { language } = useLanguage();
+  const { language } = useParking();
   const [activeService, setActiveService] = useState<number | undefined>(
     undefined
   );
@@ -40,16 +40,14 @@ export const Services = () => {
             {activeService === index && (
               <>
                 <div
-                  className={`font-bold text-[1.4rem]  ${
-                    service.description ? "mt-[1.1rem] mb-[0.7rem]" : ""
-                  } `}
+                  className={`font-bold text-[1.4rem]  ${service.description ? "mt-[1.1rem] mb-[0.7rem]" : ""
+                    } `}
                 >
                   {service.description}
                 </div>
                 <p
-                  className={`font-normal text-[1.3rem]  ${
-                    service.text ? "mb-[1.1rem]" : ""
-                  }`}
+                  className={`font-normal text-[1.3rem]  ${service.text ? "mb-[1.1rem]" : ""
+                    }`}
                 >
                   {service.text}
                 </p>

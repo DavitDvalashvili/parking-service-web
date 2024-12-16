@@ -1,10 +1,10 @@
 import data from "../../assets/locales/translations.json";
-import { useLanguage } from "../../App";
+import { useParking } from "../../App";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
 export const Devices = () => {
-  const { language } = useLanguage();
+  const { language } = useParking();
 
   const deviceContent = data[language].devices;
 

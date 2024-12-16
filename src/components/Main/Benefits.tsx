@@ -1,9 +1,9 @@
 import data from "../../assets/locales/translations.json";
-import { useLanguage } from "../../App";
+import { useParking } from "../../App";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Benefits = () => {
-  const { language } = useLanguage();
+  const { language } = useParking();
 
   const benefitContent = data[language].benefits;
 

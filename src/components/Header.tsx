@@ -1,23 +1,16 @@
 import data from "../assets/locales/translations.json";
 import { HashLink } from "react-router-hash-link";
-import { useLanguage } from "../App";
+import { useParking } from "../App";
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import ThemeSwitcher from "./Header/ThemeSwitcher";
 
-type header = {
-  darkMode: boolean;
-  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-};
 
-export const Header = ({ darkMode, setDarkMode }: header) => {
-  const { language, toggleLanguage } = useLanguage();
+export const Header = () => {
+  const { language, toggleLanguage, darkMode } = useParking();
   const [showNavBar, setShowNavbar] = useState<boolean>(false);
   const [showLanguage, setShowLanguage] = useState<boolean>(false);
-
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-  };
 
   const toggleNavBar = () => {
     setShowNavbar(!showNavBar);
@@ -30,81 +23,72 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
   const headerContent = data[language].header;
 
   return (
-    <header className="flex justify-between items-center p-8 bg-white dark:bg-dark-brown font-firago fixed z-20 top-0 left-0 w-full">
-      <div
-        className="cursor-pointer border w-[7.4rem] h-[3.4rem] rounded-[4rem]  flex justify-center items-center gap-[0.89rem] border-primary dark:border-secondary lg:hidden"
-        onClick={toggleTheme}
-      >
-        <img
-          className="w-[2.6rem] h-[2.6rem]"
-          src={
-            darkMode
-              ? "/icons/header/sunDark.svg"
-              : "/icons/header/sunLight.svg"
-          }
-          alt="sunIcon"
-        />
-        <img
-          className="w-[2.6rem] h-[2.6rem]"
-          src={
-            darkMode
-              ? "/icons/header/moonDark.svg"
-              : "/icons/header/moonLight.svg"
-          }
-          alt="moonIcon"
-        />
+    <header className="flex justify-between lg:justify-end lg:gap-[3rem] items-center p-8 lg:px-[6rem] lg:py-[4rem] bg-white dark:bg-dark-brown font-firago fixed  z-20 top-0 left-0 w-full">
+      <div className="lg:hidden">
+        <ThemeSwitcher />
       </div>
-
-      <div className="h-[4.1rem]">
-        <img
-          className="h-full"
-          src={
-            darkMode
-              ? "/images/header/logoDark.svg"
-              : "/images/header/logoLight.svg"
-          }
+      <div className="h-[4.1rem] lg:h-[5rem] lg:w-[13rem] lg:mr-auto">
+        {!darkMode && <img
+          className="h-full lg:hidden"
+          src="/images/header/logoLight.svg"
           alt="Easy Park"
-        />
+        />}
+        {darkMode && <img
+          className="h-full lg:hidden"
+          src="/images/header/logoDark.svg"
+          alt="Easy Park"
+        />}
+        {!darkMode && <img
+          className="h-full hidden lg:inline-block"
+          src="/images/header/logoLightDesktop.svg"
+          alt="Easy Park"
+        />}
+        {darkMode && <img
+          className="h-full hidden lg:inline-block"
+          src="/images/header/logoDarkDesktop.svg"
+          alt="Easy Park"
+        />}
       </div>
 
       <div
-        className={`${
-          showNavBar ? "block" : "hidden"
-        } lg:block absolute top-[8.1rem] left-0 w-full bg-secondary font-bold text-[1.8rem] text-primary dark:text-black`}
+        className={`${showNavBar ? "block" : "hidden"
+          }  absolute lg:static top-[8.1rem] left-0 w-full lg:w-fit bg-secondary lg:bg-transparent font-bold text-[1.8rem] text-primary dark:text-black lg:dark:text-white lg:flex lg:justify-between lg:items-center lg:gap-[3rem]`}
       >
-        <nav className="w-full py-[1.6rem] px-8 cursor-pointer">
-          <ul className="font-bold flex flex-col gap-[3.6rem]">
-            <li onClick={toggleNavBar}>
+        <nav className="w-full py-[1.6rem] px-8 lg:p-0 ursor-pointer uppercase">
+          <ul className="font-bold flex flex-col lg:flex-row gap-[3.6rem] lg:gap-[3rem] lg:w-fit">
+            <li onClick={toggleNavBar} className="lg:border-b lg:border-transparent hover:border-primary font-medium hover:font-bold dark:hover:border-secondary transition duration-300 dark:hover:text-secondary">
               <HashLink to="#main">{headerContent.nav.main}</HashLink>
             </li>
-            <li onClick={toggleNavBar}>
+            <li onClick={toggleNavBar} className="lg:border-b lg:border-transparent hover:border-primary font-medium hover:font-bold dark:hover:border-secondary transition duration-300 dark:hover:text-secondary">
               <HashLink to="#service">{headerContent.nav.service}</HashLink>
             </li>
-            <li onClick={toggleNavBar}>
+            <li onClick={toggleNavBar} className="lg:border-b lg:border-transparent hover:border-primary font-medium hover:font-bold dark:hover:border-secondary transition duration-300 dark:hover:text-secondary">
               <HashLink to="#device">{headerContent.nav.device}</HashLink>
             </li>
-            <li onClick={toggleNavBar}>
+            <li onClick={toggleNavBar} className="lg:border-b lg:border-transparent hover:border-primary font-medium hover:font-bold dark:hover:border-secondary transition duration-300 dark:hover:text-secondary">
               <HashLink to="#about">{headerContent.nav.about}</HashLink>
             </li>
-            <li onClick={toggleNavBar}>
+            <li onClick={toggleNavBar} className="lg:border-b lg:border-transparent hover:border-primary font-medium hover:font-bold dark:hover:border-secondary transition duration-300 dark:hover:text-secondary">
               <HashLink to="#contact">{headerContent.nav.contact}</HashLink>
             </li>
           </ul>
         </nav>
+        <div className="hidden lg:block">
+          <ThemeSwitcher />
+        </div>
 
         <div
-          className=" mx-8 mt-[2.1rem] mb-[1.9rem] flex justify-start items-start gap-[0.5rem] cursor-pointer"
+          className=" mx-8 mt-[2.1rem] mb-[1.9rem] flex justify-start items-start gap-[0.5rem] cursor-pointer lg:m-0"
           onClick={toggleLanguageBar}
         >
-          <div className="flex flex-col item-center cursor-pointer gap-[1.7rem]">
+          <div className="flex flex-col item-center cursor-pointer gap-[1.7rem] lg:relative">
             {(showLanguage || language == "Ge") && (
               <span
-                className={`font-bold leading-[2.2rem] ${
-                  language == "Ge" ? "font-bold order-first" : "font-normal"
-                }`}
+                className={`font-bold leading-[2.2rem] ${language == "Ge" ? "font-bold order-first" : "font-normal lg:absolute left-0 top-[3rem]"
+                  } `}
                 onClick={() => {
                   toggleLanguage("Ge");
-                  showLanguage && toggleNavBar();
+                  if (showLanguage) toggleNavBar();
                 }}
               >
                 ქარ
@@ -113,12 +97,11 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
 
             {(showLanguage || language == "En") && (
               <span
-                className={`font-bold leading-[2.2rem] ${
-                  language == "En" ? "font-bold order-first" : "font-normal"
-                }`}
+                className={`font-bold leading-[2.2rem] ${language == "En" ? "font-bold order-first" : "font-normal lg:absolute left-0 top-[3rem]"
+                  } `}
                 onClick={() => {
                   toggleLanguage("En");
-                  showLanguage && toggleNavBar();
+                  if (showLanguage) toggleNavBar();
                 }}
               >
                 En
@@ -140,8 +123,7 @@ export const Header = ({ darkMode, setDarkMode }: header) => {
           alt="burgerMenu"
         />
       </div>
-
-      <button className="text-[1.4rem] font-bold text-white bg-primary w-[16rem] h-[5rem] font-firago rounded-[1.5rem] hidden lg:inline-block ">
+      <button className="text-[1.4rem] lg:text-[1.6rem] font-bold text-white bg-primary w-[18rem] h-[5rem] font-firago font-feature rounded-[1.5rem] hidden lg:inline-block uppercase">
         {headerContent.button}
       </button>
     </header>
