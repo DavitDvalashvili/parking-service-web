@@ -23,11 +23,12 @@ export const Header = () => {
   const headerContent = data[language].header;
 
   return (
-    <header className="flex justify-between lg:justify-end lg:gap-[3rem] xl:gap-[4rem] items-center p-8 lg:px-[6rem] xl:px-[10rem] lg:py-[4rem] bg-white dark:bg-dark-brown font-firago fixed  z-20 top-0 left-0 w-full">
+    <header className="flex justify-between lg:justify-end lg:gap-[3rem] xl:gap-[4rem] items-center p-8 lg:px-[6rem] xl:px-[10rem] lg:py-[4rem] bg-white dark:bg-dark-brown 
+    font-firago fixed  z-30 top-0 left-0 w-full ">
       <div className="lg:hidden">
         <ThemeSwitcher />
       </div>
-      <div className="h-[4.1rem] lg:h-[5rem] lg:w-[13rem] lg:mr-auto xl:w-[25rem] xl:h-[9.616rem]">
+      <div className="h-[4.1rem] lg:h-[5rem] lg:w-[13rem] lg:mr-auto xl:w-[25rem] xl:h-[9.6rem]">
         {!darkMode && <img
           className="h-full"
           src="/images/header/logoLight.svg"
@@ -44,7 +45,7 @@ export const Header = () => {
         className={`${showNavBar ? "block" : "hidden"
           }  absolute lg:static top-[8.1rem] left-0 w-full lg:w-fit bg-secondary lg:bg-transparent font-bold text-[1.8rem] xl:text-[2.4rem] text-primary dark:text-black lg:dark:text-white lg:flex lg:justify-between lg:items-center lg:gap-[3rem] xl:gap-[3.85rem]`}
       >
-        <nav className="w-full py-[1.6rem] px-8 lg:p-0 ursor-pointer uppercase">
+        <nav className="w-full py-[1.6rem] px-8 lg:p-0 cursor-pointer uppercase">
           <ul className="font-bold flex flex-col lg:flex-row gap-[3.6rem] lg:gap-[3rem] xl:gap-[3.8rem] lg:w-fit">
             <li onClick={toggleNavBar} className="lg:border-b lg:border-transparent hover:border-primary font-medium hover:font-bold dark:hover:border-secondary transition duration-300 dark:hover:text-secondary">
               <HashLink to="#main">{headerContent.nav.main}</HashLink>

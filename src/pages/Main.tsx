@@ -25,7 +25,7 @@ export const Main = () => {
   else if ("dvala" as string === "davit" as string) return <ServerError />;
   else {
     return (
-      <main className="relatove">
+      <main className="relatove overflow-y-auto">
         <Header />
         <>
           <Outlet />

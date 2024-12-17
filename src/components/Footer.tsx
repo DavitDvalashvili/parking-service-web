@@ -83,8 +83,8 @@ export const Footer = () => {
             <FaInstagram className="w-[2.4rem] h-[2.4rem] cursor-pointer" />
           </a>
         </div>
-        <div className="font-feature flex text-[1.8rem] xl:text-[2rem] xl:gap-[1.8rem] justify-start items-center 
-        gap-8 font-normal xl:min-w-[26rem]">
+        <div className="font-feature flex text-[1.8rem] lg:text-[2rem] xl:gap-[1.8rem] justify-start items-center 
+        gap-8 font-normal lg:min-w-[26rem]">
           <img
             src={
               darkMode
