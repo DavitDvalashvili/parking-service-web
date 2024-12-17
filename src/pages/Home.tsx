@@ -23,8 +23,7 @@ export const Home = () => {
     <div className="dark:bg-dark-brown">
       <div
         className="font-bold text-[2rem] font-firago font-feature pt-4  text-black dark:text-white dark:bg-dark-brown  scroll-mt-[8.1rem] mt-[8.1rem] 
-        lg:mt-[13rem] xl:mt-[17.6rem] lg:pt-0 xl:pt-[4rem] lg:border-b lg:border-b-black lg:dark:border-transparent
-        "
+        lg:mt-[13rem] xl:mt-[17.6rem] lg:pt-0 xl:pt-[4rem] lg:border-b lg:border-b-black lg:dark:border-transparent"
         id="main"
       >
         <h2 className="mx-auto text-center uppercase max-w-[26.1rem] lg:hidden">
@@ -41,7 +40,6 @@ export const Home = () => {
              dark:bg-secondary dark:text-black xl:w-[30.9rem] xl:h-[8rem] xl:text-[2.4rem]">{coverContent.button}</button>
           </div>
         </div>
-
       </div>
       <Services />
       <Benefits />

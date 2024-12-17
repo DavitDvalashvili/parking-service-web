@@ -27,7 +27,9 @@ export default {
         "mobile-dark": "url('/images/cover/coverMobileDark.svg')",
         "desktop-light": "url('/images/cover/coverDesktopLight.svg')",
         "desktop-dark": "url('/images/cover/coverDesktopDark.svg')",
-        "benefit-card": "url(./images/benefits/parkingBg.svg)",
+        "benefit-card": "url('/images/benefits/parkingBg.svg')",
+        "footer-bg-light": "url('/images/footer/bgPatternLight.svg')",
+        "footer-bg-dark": "url('/images/footer/bgPatternDark.svg')",
       },
       boxShadow: {
         customShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",

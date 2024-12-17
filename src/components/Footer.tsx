@@ -12,8 +12,9 @@ export const Footer = () => {
 
   return (
     <footer className="bg-white dark:bg-dark-brown text-black flex flex-col items-start pt-[1.1rem] px-8 pb-[2.7rem] border-t
-     border-black dark:border-white gap-[2.4rem] font-firago dark:text-white lg:pt-[8rem] lg:pl-[6rem] lg:pr-[18.8rem] lg:pb-[11.4rem]
-    lg:flex-row lg:justify-start lg:gap-[10.68rem] xl:pl-[10rem] xl:pt-[10rem] xl:pr-[27.2rem] xl:pb-[10.3rem] xl:gap-[22.7rem]">
+     border-black dark:border-white gap-[2.4rem] font-firago dark:text-white bg-footer-bg-light dark:bg-footer-bg-dark bg-right-bottom bg-no-repeat
+     lg:pt-[8rem] lg:pl-[6rem] lg:pr-[18.8rem] lg:pb-[11.4rem] lg:flex-row lg:justify-start lg:gap-[10.68rem] 
+     xl:pl-[10rem] xl:pt-[10rem] xl:pr-[27.2rem] xl:pb-[10.3rem] xl:gap-[22.7rem]">
       <div className="h-[4.1rem] mx-auto lg:mx-0 lg:h-[9.7rem] xl:h-[16.655rem] ">
         {darkMode && <img
           className="h-full"
