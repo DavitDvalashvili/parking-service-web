@@ -3,6 +3,8 @@ import { useState } from "react";
 
 import { useParking } from "../../App";
 
+import { GeHeader, GeContact } from "../../assets/locales/translations.js"
+
 
 export const ServicesDesktop = () => {
     const { language } = useParking();
