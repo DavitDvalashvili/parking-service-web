@@ -19,6 +19,7 @@ export default {
         placeholder: "#898A8A",
       },
       screens: {
+        md: "768px",
         lg: "1440px",
         xl: "1920px",
       },

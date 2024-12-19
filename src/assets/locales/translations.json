@@ -80,7 +80,7 @@
       ],
       "title": "ჩვენი უპირატესობები",
       "description": "რატომ უნდა აირჩიოთ Easy Park თქვენი ბიზნესისთვის?",
-      "text": "აირჩიეთ Easy Park და მიიღეთ სერვისი, რომელიც აერთიანებს ტექნოლოგიებს, ბიზნესზე ორიენტირებული უპირატესობებით."
+      "paragaph": "აირჩიეთ Easy Park და მიიღეთ სერვისი, რომელიც აერთიანებს ტექნოლოგიებს, ბიზნესზე ორიენტირებული უპირატესობებით."
     },
     "devices": {
       "title": "მოწყობილობები",
@@ -240,7 +240,7 @@
       ],
       "title": "Benefits",
       "description": "Why choose Easy Park for your business?",
-      "text": "Choose Easy Park and enjoy a service combining advanced technology with business-oriented benefits."
+      "paragaph": "Choose Easy Park and enjoy a service combining advanced technology with business-oriented benefits."
     },
     "devices": {
       "title": "Devices",

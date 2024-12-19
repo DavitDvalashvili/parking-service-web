@@ -10,10 +10,10 @@ export const Devices = () => {
 
   return (
     <div
-      className="bg-white dark:bg-dark-brown  pl-[1.6rem] font-firago pt-8 scroll-mt-[8.1rem]"
+      className="bg-white dark:bg-dark-brown  pl-[1.6rem] font-firago pt-8 scroll-mt-[8.1rem] bg-red-600 lg:pl-[6rem] lg:pt-[8rem]"
       id="device"
     >
-      <h3 className="font-bold text-[2rem] font-feature text-center capitalize dark:text-white pb-8">
+      <h3 className="font-bold text-[2rem] font-feature text-center capitalize dark:text-white pb-8 lg:text-left">
         {deviceContent.title}
       </h3>
       <Swiper slidesPerView={"auto"} spaceBetween={0}>
