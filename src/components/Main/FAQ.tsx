@@ -14,7 +14,7 @@ export const FAQ = () => {
 
   const faqContent = data[language].faq;
   return (
-    <div className="font-firago py-8 bg-white dark:bg-dark-brown lg:py-[8rem] xl:py-[7rem] lg:max-w-[96rem] xl:max-w-[122rem] lg:mx-auto lg:bg-red-800">
+    <div className="font-firago py-8 bg-white dark:bg-dark-brown lg:py-[8rem] xl:py-[7rem] lg:max-w-[96rem] xl:max-w-[122rem] lg:mx-auto ">
       <h3 className="text-black text-[2rem] font-bold leading-[90%] text-center pb-8 font-feature dark:text-white lg:text-[2.4rem] lg:pb-[4.7rem]
       xl:text-[3.2rem] xl:pb-[6rem]">
         {faqContent.title}

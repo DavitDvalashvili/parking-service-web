@@ -78,9 +78,9 @@ export const Home = () => {
           </div>
         </div>
       )}
-      <div className="sticky bottom-0 left-0 ">
+      <div className="sticky bottom-0 z-30">
         <button
-          className="w-full text-[2rem] font-bold text-black bg-secondary font-feature font-firago uppercase rounded-[1.5rem] py-[1.8rem] leading-[2.4rem] cursor-pointer"
+          className="w-full text-[2rem] font-bold text-black bg-secondary font-feature font-firago uppercase rounded-[1.5rem] py-[1.8rem] leading-[2.4rem] cursor-pointer lg:hidden"
           onClick={toggleShowContactForm}
         >
           {coverContent.button}
