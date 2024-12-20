@@ -101,6 +101,14 @@
         {
           "image": "./images/devices/device1.svg",
           "name": "device5"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device4"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device5"
         }
       ]
     },
@@ -253,6 +261,14 @@
         {
           "image": "./images/devices/device1.svg",
           "name": "device3"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device4"
+        },
+        {
+          "image": "./images/devices/device1.svg",
+          "name": "device5"
         },
         {
           "image": "./images/devices/device1.svg",

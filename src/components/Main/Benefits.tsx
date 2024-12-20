@@ -10,8 +10,7 @@ export const Benefits = () => {
   return (
     <div
       className="bg-white dark:bg-dark-brown text-black font-firago pt-8 scroll-mt-[8.1rem] 
-      xl:pt-10 pl-[1.6rem] lg:pl-[6rem] xl:pl-[10rem]
-      "
+      xl:pt-10 pl-[1.6rem] lg:pl-[6rem] xl:pl-[10rem]"
       id="about"
     >
       <h3 className="font-bold text-[2rem] font-feature text-center capitalize dark:text-white lg:text-left xl:text-[3rem]">
@@ -21,7 +20,7 @@ export const Benefits = () => {
       xl:mt-[1.6rem] xl:mb-16 xl:text-[2rem]">
         {benefitContent.description}
       </p>
-      <Swiper slidesPerView={"auto"} spaceBetween={0} className="pr-[1.6rem]  lg:pr-[5.6rem] xl:ml-[-2.5rem] xl:pr-[7.5rem]" >
+      <Swiper slidesPerView={"auto"} spaceBetween={0} className="pr-[1.6rem]  lg:pr-[5.4rem] lg:ml-[-1rem] xl:ml-[-2.5rem] xl:pr-[7.5rem]" >
         {benefitContent.benefits.map((benefit, index) => (
           <SwiperSlide key={index}>
             <div className="w-[20.8rem] h-[18.7rem] rounded-[1rem] bg-benefit-card bg-center bg-cover flex flex-col justify-between items-center p-2 pt-6 mx-[0.4rem] 

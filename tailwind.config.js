@@ -15,6 +15,7 @@ export default {
         errorRed: "#FF0000",
         dark: {
           brown: "#1C1C1C",
+          darkBrown: "#101419",
         },
         placeholder: "#898A8A",
       },
