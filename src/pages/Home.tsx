@@ -20,7 +20,7 @@ export const Home = () => {
   };
 
   return (
-    <div className="dark:bg-dark-brown">
+    <div className="max-w-[76.8rem] mx-auto lg:max-w-[192rem]">
       <div
         className="font-bold text-[2rem] font-firago font-feature pt-4  text-black dark:text-white dark:bg-dark-brown  scroll-mt-[8.1rem] mt-[8.1rem] 
         lg:mt-[13rem] xl:mt-[17.6rem] lg:pt-0 xl:pt-[4rem] lg:border-b lg:border-b-black lg:dark:border-transparent"
@@ -46,35 +46,37 @@ export const Home = () => {
       <Devices />
       <ProcessReview />
       <FAQ />
-      <div className="w-full h-[37.1rem] relative">
-        <div className="absolute top-0 left-0 w-full z-20">
-          <Contact variant="landing" />
-        </div>
-      </div>
+      <Contact />
       {showContactForm && (
-        <div className="fixed top-[8.1rem] left-0 w-screen max-h-screen bg-white dark:bg-dark-brown overflow-hidden z-40">
-          <div className="flex justify-end px-8 pt-4 py-8">
-            <div
-              onClick={toggleShowContactForm}
-              className="w-16 h-16 border border-[#e6e6e6] dark:border-white rounded-[1.6rem] flex justify-center items-center cursor-pointer"
-            >
-              <RxCross1 className="text-[1.4rem] stroke-[1] dark:text-white" />
+        <div className="fixed top-[8.1rem] left-0 w-screen h-screen  bg-white dark:bg-dark-brown overflow-hidden z-40 flex flex-col justify-start">
+          <div className="w-full max-w-[76.8rem] mx-auto">
+            <div>
+              <div className="flex justify-end px-8 pt-4 py-8">
+                <div
+                  onClick={toggleShowContactForm}
+                  className="w-16 h-16 border border-[#e6e6e6] dark:border-white rounded-[1.6rem] flex justify-center items-center cursor-pointer"
+                >
+                  <RxCross1 className="text-[1.4rem] stroke-[1] dark:text-white" />
+                </div>
+              </div>
+              <Contact />
             </div>
-          </div>
-          <Contact variant="popup" />
-          <div className="mt-[-3rem]">
-            {!darkMode && (
-              <img
-                src="./images/contact/letterSendLight.svg"
-                alt="letterSendLight"
-              />
-            )}
-            {darkMode && (
-              <img
-                src="./images/contact/letterSendDark.svg"
-                alt="letterSendDark"
-              />
-            )}
+            <div >
+              {!darkMode && (
+                <img
+                  src="./images/contact/letterSendLight.svg"
+                  alt="letterSendLight"
+
+                />
+              )}
+              {darkMode && (
+                <img
+                  src="./images/contact/letterSendDark.svg"
+                  alt="letterSendDark"
+
+                />
+              )}
+            </div>
           </div>
         </div>
       )}

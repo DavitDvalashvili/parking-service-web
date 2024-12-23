@@ -1,5 +1,5 @@
-import { ServicesMobile } from "../Services/ServicesMobile"
-import { ServicesDesktop } from "../Services/ServicesDesktop"
+import { ServicesMobile } from "./Services/ServicesMobile"
+import { ServicesDesktop } from "./Services/ServicesDesktop"
 
 export const Services = () => {
     return (

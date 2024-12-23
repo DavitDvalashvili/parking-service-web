@@ -1,7 +1,7 @@
-import data from "../../assets/locales/translations.json";
+import data from "../../../assets/locales/translations.json";
 import { useState } from "react";
 
-import { useParking } from "../../App";
+import { useParking } from "../../../App";
 
 export const ServicesMobile = () => {
   const { language } = useParking();

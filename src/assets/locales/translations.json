@@ -113,21 +113,30 @@
       ]
     },
     "contact": {
-      "title": "შეტყობინება",
-      "button": "გაგზავნა",
-      "labels": {
-        "firstName": "სახელი",
-        "lastName": "გვარი",
-        "email": "ელ-ფოსტა",
-        "phoneNumber": "საკონტაქტო ნომერი",
-        "message": "შეტყობინება"
+      "title": "კონტაქტი",
+      "contactForm": {
+        "title": "შეტყობინება",
+        "button": "გაგზავნა",
+        "labels": {
+          "firstName": "სახელი",
+          "lastName": "გვარი",
+          "email": "ელ-ფოსტა",
+          "phoneNumber": "საკონტაქტო ნომერი",
+          "message": "შეტყობინება"
+        },
+        "placeholders": {
+          "firstName": "სახელი",
+          "lastName": "გვარი",
+          "email": "ელ-ფოსტა",
+          "phoneNumber": "საკონტაქტო ნომერი",
+          "message": "შეტყობინება..."
+        }
       },
-      "placeholders": {
-        "firstName": "სახელი",
-        "lastName": "გვარი",
-        "email": "ელ-ფოსტა",
-        "phoneNumber": "საკონტაქტო ნომერი",
-        "message": "შეტყობინება..."
+      "contactInfo": {
+        "contact": "დაგვიკავშირდით",
+        "email": "info@easypark.ge",
+        "phone": "+995 593 23 02 22",
+        "address": "მარშალ გელოვანის ქუჩა #2, თბილისი, საქართველო"
       }
     },
     "faq": {
@@ -282,20 +291,29 @@
     },
     "contact": {
       "title": "Contact",
-      "button": "send",
-      "labels": {
-        "firstName": "First Name",
-        "lastName": "Last Name",
-        "email": "Email",
-        "phoneNumber": "Phone Number",
-        "message": "Message"
+      "contactForm": {
+        "title": "Contact",
+        "button": "send",
+        "labels": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "email": "Email",
+          "phoneNumber": "Phone Number",
+          "message": "Message"
+        },
+        "placeholders": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "email": "Email",
+          "phoneNumber": "Phone Number",
+          "message": "Message..."
+        }
       },
-      "placeholders": {
-        "firstName": "First Name",
-        "lastName": "Last Name",
-        "email": "Email",
-        "phoneNumber": "Phone Number",
-        "message": "Message..."
+      "contactInfo": {
+        "contact": "Contact",
+        "email": "info@easypark.ge",
+        "phone": "+995 593 23 02 22",
+        "address": "Marshal Gelovani Street #2, Tbilisi, Georgia"
       }
     },
     "faq": {

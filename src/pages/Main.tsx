@@ -25,7 +25,7 @@ export const Main = () => {
   else if ("dvala" as string === "davit" as string) return <ServerError />;
   else {
     return (
-      <main className="relative">
+      <main className="relative dark:bg-dark-brown ">
         <Header />
         <>
           <Outlet />
