@@ -10,10 +10,10 @@ export const Contact = () => {
   const contactContent = data[language].contact;
 
   return (
-    <div className="pb-0 scroll-mt-[8.1rem] lg:px-[6rem] font-firago"
+    <div className="pb-0 scroll-mt-[8.1rem] lg:px-[6rem] font-firago xl:px-[10rem]"
       id="contact">
-      <h3 className="hidden lg:block uppercase text-[2rem] font-bold font-feature pb-[4rem]">{contactContent.title}</h3>
-      <div className="lg:flex lg:items-center lg:justify-left gap-[11.1rem]">
+      <h3 className="hidden lg:block uppercase text-[2rem] font-bold font-feature pb-[4rem] text-black dark:text-white lg:text-[3rem]">{contactContent.title}</h3>
+      <div className="lg:flex lg:items-center lg:justify-left gap-[11.1rem] xl:gap-[14.7rem]">
         <div className="hidden lg:block">
           <ContactBox />
         </div>

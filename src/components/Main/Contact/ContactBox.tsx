@@ -11,7 +11,7 @@ export const ContactBox = () => {
 
     return (
         <div className="w-[43.4rem] h-[35rem] border-[0.05rem] border-black rounded-[1rem] px-[2.2rem] py-[2.6rem] text-[1.8rem] font-firago uppercase font-feature
-        flex flex-col justify-between xl:w-[51.3rem] xl:h-[37rem] xl:px-[2rem] xl:py-[2.7rem] xl:text-[2rem] dark:bg-black dark:text-white">
+        flex flex-col justify-between xl:w-[51.3rem] xl:h-[37rem] xl:px-[2rem] xl:py-[2.7rem] xl:text-[2rem] dark:bg-dark-darkBrown dark:text-white">
             <div>
                 <h5 className=" font-bold leading-[90%] mb-[4rem]">
                     {contactContent.contact}
