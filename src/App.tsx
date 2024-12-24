@@ -14,14 +14,20 @@ type UseParking = {
   language: "Ge" | "En";
   toggleLanguage: (language: "Ge" | "En") => void;
   darkMode: boolean;
-  toggleDarkMode: (darkMode: boolean) => void;
+  toggleDarkMode: () => void;
+  showContactForm: boolean;
+  toggleShowContactForm: () => void;
 };
 
 export const useParking = create<UseParking>((set) => ({
   language: "Ge",
   toggleLanguage: (language: "Ge" | "En") => set({ language }),
   darkMode: false,
-  toggleDarkMode: (darkMode: boolean) => set({ darkMode }),
+  toggleDarkMode: () =>
+    set((state) => ({ darkMode: !state.darkMode })),
+  showContactForm: false,
+  toggleShowContactForm: () =>
+    set((state) => ({ showContactForm: !state.showContactForm })),
 }));
 
 const App = () => {

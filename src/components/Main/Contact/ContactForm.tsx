@@ -31,7 +31,7 @@ export const ContactForm = ({ variant }: contact) => {
     };
 
     const handleChange = (
-        e: React.ChangeEvent<HTMLInputElement>
+        e: | React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
     ) => {
         const { name, value } = e.target;
         setFormData({
@@ -187,20 +187,20 @@ export const ContactForm = ({ variant }: contact) => {
                     className={`rounded-[2rem] shadow-customShadow lg:shadow-none py-[1.1rem] px-4 dark:border lg:py-0 lg:px-0 lg:border-[0rem] lg:dark:border-0 lg:border-b lg:dark:border-b lg:border-black
                      lg:dark:border-white lg:rounded-none ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white lg:dark:bg-dark-brown"} `} >
                     <label htmlFor="message" className="hidden lg:block text-[1.6rem] font-medium leading-[2rem] xl:text-[1.8rem] dark:text-white">{contactContent.labels.message}</label>
-                    <input
+                    <textarea
                         onChange={handleChange}
                         name="message"
                         id="message"
                         value={formData.message}
                         placeholder={contactContent.placeholders.message}
                         className={`${isPopup ? "dark:bg-dark-brown" : "dark:bg-white lg:dark:bg-dark-brown"} w-full h-[5.6rem] focus:outline-none placeholder:text-placeholder text-black font-medium
-                        lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.8rem] lg:placeholder:text-transparent lg:dark:text-white lg:h-[2rem]`}
+                        lg:text-[1.2rem] xl:text-[1.4rem] lg:mt-[0.8rem] lg:placeholder:text-transparent lg:dark:text-white lg:h-[2rem] lg:resize-none lg:overflow-hidden `}
                     />
                 </div>
                 <button
                     type="submit"
                     className={`mt-4 lg:mt-2 text-[1.2rem] leading-8 font-medium text-white bg-primary dark:text-black dark:bg-secondary w-[19.7rem] h-[4.1rem] rounded-[2rem] mx-auto cursor-pointer border border-[#FFCA40]  uppercase 
-                       lg:w-[21.4rem]b lg:h-[5.4rem] lg:text-[1.6rem] lg:font-bold lg:border-none lg:mx-0 lg:ml-auto xl:mt-[-0.5rem] ${isPopup ? "w-full" : ""}`}
+                       lg:w-[21.4rem]b lg:h-[5.4rem] lg:text-[1.6rem] lg:font-bold lg:border-none lg:mx-0 lg:ml-auto xl:mt-[-0.5rem]  ${isPopup ? "w-full lg:w-[21.4rem]" : ""}`}
                     onClick={() => {
                         handleError();
                     }}

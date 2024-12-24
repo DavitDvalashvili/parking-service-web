@@ -8,7 +8,7 @@ import ThemeSwitcher from "./Header/ThemeSwitcher";
 
 
 export const Header = () => {
-  const { language, toggleLanguage, darkMode } = useParking();
+  const { language, toggleLanguage, darkMode, toggleShowContactForm } = useParking();
   const [showNavBar, setShowNavbar] = useState<boolean>(false);
   const [showLanguage, setShowLanguage] = useState<boolean>(false);
 
@@ -115,7 +115,8 @@ export const Header = () => {
         />
       </div>
       <button className="text-[1.4rem] lg:text-[1.6rem] xl:[1.8rem] font-bold text-white bg-primary w-[18rem] h-[5rem] 
-      xl:w-[22.4rem] xl:h-[6rem] font-firago font-feature rounded-[1.5rem] hidden lg:inline-block uppercase">
+      xl:w-[22.4rem] xl:h-[6rem] font-firago font-feature rounded-[1.5rem] hidden lg:inline-block uppercase"
+        onClick={() => { toggleShowContactForm() }}>
         {headerContent.button}
       </button>
     </header>

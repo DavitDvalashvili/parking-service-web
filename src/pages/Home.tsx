@@ -1,23 +1,17 @@
 import data from "../assets/locales/translations.json";
 import { Services } from "../components/Main/Services";
-import { RxCross1 } from "react-icons/rx";
 import { Benefits } from "../components/Main/Benefits";
 import { Devices } from "../components/Main/Devices";
 import { Contact } from "../components/Main/Contact";
 import { FAQ } from "../components/Main/FAQ";
 import { ProcessReview } from "../components/Main/ProcessReview";
-import { useState } from "react";
 import { useParking } from "../App";
+import { ContactPopup } from "../components/Main/Contact/ContactPopup";
 
 export const Home = () => {
-  const [showContactForm, setShowContactForm] = useState<boolean>(false);
-  const { language, darkMode } = useParking();
+  const { language, showContactForm, toggleShowContactForm } = useParking();
 
   const coverContent = data[language].cover;
-
-  const toggleShowContactForm = () => {
-    setShowContactForm(!showContactForm);
-  };
 
   return (
     <div className="max-w-[76.8rem] mx-auto lg:max-w-[192rem]">
@@ -37,7 +31,9 @@ export const Home = () => {
               {coverContent.title}
             </h2>
             <button className="hidden lg:inline-block w-[26rem] h-[6rem] text-white bg-primary rounded-[1.5rem] cursor-pointer uppercase
-             dark:bg-secondary dark:text-black xl:w-[30.9rem] xl:h-[8rem] xl:text-[2.4rem]">{coverContent.button}</button>
+             dark:bg-secondary dark:text-black xl:w-[30.9rem] xl:h-[8rem] xl:text-[2.4rem]"
+              onClick={() => { toggleShowContactForm() }}
+            >{coverContent.button}</button>
           </div>
         </div>
       </div>
@@ -46,44 +42,14 @@ export const Home = () => {
       <Devices />
       <ProcessReview />
       <FAQ />
-      <Contact />
-      {showContactForm && (
-        <div className="fixed top-[8.1rem] left-0 w-screen h-screen  bg-white dark:bg-dark-brown overflow-hidden z-40 flex flex-col justify-start">
-          <div className="w-full max-w-[76.8rem] mx-auto">
-            <div>
-              <div className="flex justify-end px-8 pt-4 py-8">
-                <div
-                  onClick={toggleShowContactForm}
-                  className="w-16 h-16 border border-[#e6e6e6] dark:border-white rounded-[1.6rem] flex justify-center items-center cursor-pointer"
-                >
-                  <RxCross1 className="text-[1.4rem] stroke-[1] dark:text-white" />
-                </div>
-              </div>
-              <Contact />
-            </div>
-            <div >
-              {!darkMode && (
-                <img
-                  src="./images/contact/letterSendLight.svg"
-                  alt="letterSendLight"
-
-                />
-              )}
-              {darkMode && (
-                <img
-                  src="./images/contact/letterSendDark.svg"
-                  alt="letterSendDark"
-
-                />
-              )}
-            </div>
-          </div>
-        </div>
-      )}
-      <div className="sticky bottom-0 z-30">
+      <Contact variant="landing" />
+      {showContactForm &&
+        <ContactPopup />
+      }
+      <div className="sticky bottom-0 z-10">
         <button
           className="w-full text-[2rem] font-bold text-black bg-secondary font-feature font-firago uppercase rounded-[1.5rem] py-[1.8rem] leading-[2.4rem] cursor-pointer lg:hidden"
-          onClick={toggleShowContactForm}
+          onClick={() => { toggleShowContactForm() }}
         >
           {coverContent.button}
         </button>

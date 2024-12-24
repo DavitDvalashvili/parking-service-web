@@ -3,8 +3,12 @@ import { ContactBox } from "./Contact/ContactBox";
 import { ContactForm } from "./Contact/ContactForm";
 import { useParking } from "../../App";
 
-export const Contact = () => {
+type contact = {
+  variant: "popup" | "landing";
+};
 
+export const Contact = ({ variant }: contact) => {
+  const isPopup = variant === "popup";
   const { language, darkMode } = useParking();
 
   const contactContent = data[language].contact;
@@ -15,25 +19,25 @@ export const Contact = () => {
       <h3 className="hidden lg:block uppercase text-[2rem] font-bold font-feature pb-[4rem] text-black dark:text-white lg:text-[3rem]">{contactContent.title}</h3>
       <div className="lg:flex lg:items-start lg:justify-left gap-[11.1rem] xl:gap-[14.7rem]">
         <div className="hidden lg:block">
-          <ContactBox />
+          <ContactBox variant="landing" />
         </div>
         <div className="w-full h-[36.2rem] relative lg:static lg:w-auto lg:h-fit">
-          <div className="absolute top-0 left-0 w-full h-[40rem] z-40 lg:static  lg:h-fit">
+          <div className="absolute top-0 left-0 z-20 h-[40rem] w-full lg:static  lg:h-fit ">
             <ContactForm variant="landing" />
           </div>
-          <div className="w-full pr-[6rem] pt-[-4rem]">
+          <div className="hidden lg:block   h-[16.7rem] w-[36rem] ml-auto">
             {!darkMode && (
               <img
                 src="./images/contact/letterSendLight.svg"
                 alt="letterSendLight"
-                className="w-[36rem]  ml-auto"
+                className=" h-full w-full ml-auto"
               />
             )}
             {darkMode && (
               <img
                 src="./images/contact/letterSendDark.svg"
                 alt="letterSendDark"
-                className="w-[36rem]  ml-auto"
+                className="w-full h-full ml-auto"
               />
             )}
           </div>

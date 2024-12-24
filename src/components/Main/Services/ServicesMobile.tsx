@@ -30,7 +30,7 @@ export const ServicesMobile = () => {
           >
             <div className="flex justify-start items-center gap-[1.2rem] ">
               <div
-                className="h-[6rem] w-[8.4rem] bg-no-repeat bg-auto bg-left "
+                className="h-[6rem] w-[8.4rem] bg-no-repeat bg-contain bg-left "
                 style={{ backgroundImage: `url(${service.image})` }}
               ></div>
               <h6 className="text-[1.7rem] max-w-[21.3rem]">

@@ -5,7 +5,7 @@ const ThemeSwitcher = () => {
   const { toggleDarkMode, darkMode } = useParking()
 
   const toggleTheme = () => {
-    toggleDarkMode(!darkMode);
+    toggleDarkMode();
   };
 
   return (

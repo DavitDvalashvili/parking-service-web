@@ -25,7 +25,10 @@ export const ProcessReview = () => {
         </div>
         <div className="flex justify-end items-center flex-col ">
           <img src="/images/process/parking.svg"
-            className="lg:w-[18.5rem] xl:w-[25.9rem]"
+            className="lg:w-[18.5rem] xl:w-[25.9rem] lg:dark:hidden"
+            alt={processContent.parking} />
+          <img src="/images/process/parkingDark.svg"
+            className="lg:w-[18.5rem] xl:w-[25.9rem] hidden lg:dark:inline-block"
             alt={processContent.parking} />
           <p className="pt-[0.5rem] lg:pt-0 lg:order-first lg:pb-[3.2rem]">{processContent.parking}</p>
         </div>
