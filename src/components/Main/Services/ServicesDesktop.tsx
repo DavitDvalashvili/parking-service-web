@@ -18,8 +18,7 @@ export const ServicesDesktop = () => {
     return (
         <div className="font-firago py-[8em] px-[6rem] xl:pt-[10rem] xl:px-[10rem]">
             <h3
-                className="text-left text-[2rem] uppercase font-bold font-feature pb-[0.5rem] dark:text-white
-            xl:[3rem] xl:pb-[1.6rem]"
+                className="text-left text-[2rem] uppercase font-bold font-feature pb-[0.5rem] dark:text-white xl:text-[3rem] xl:pb-[1.6rem]"
             >
                 {serviceContent.title}
             </h3>

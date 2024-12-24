@@ -7,6 +7,7 @@ import { FAQ } from "../components/Main/FAQ";
 import { ProcessReview } from "../components/Main/ProcessReview";
 import { useParking } from "../App";
 import { ContactPopup } from "../components/Main/Contact/ContactPopup";
+import { ContactButton } from "../components/ContactButton";
 
 export const Home = () => {
   const { language, showContactForm, toggleShowContactForm } = useParking();
@@ -16,7 +17,7 @@ export const Home = () => {
   return (
     <div className="max-w-[76.8rem] mx-auto lg:max-w-[192rem]">
       <div
-        className="font-bold text-[2rem] font-firago font-feature pt-4  text-black dark:text-white dark:bg-dark-darkBrown  scroll-mt-[8.1rem] mt-[8.1rem] 
+        className="font-bold text-[2rem] font-firago font-feature pt-4  text-black dark:text-white dark:bg-dark-darkBrown  scroll-mt-[8.1rem] lg:scroll-mt-[13rem] xl:scroll-mt-[17.6rem] mt-[8.1rem] 
         lg:mt-[13rem] xl:mt-[17.6rem] lg:pt-0 xl:pt-[4rem] lg:border-b lg:border-b-black lg:dark:border-transparent"
         id="main"
       >
@@ -46,14 +47,7 @@ export const Home = () => {
       {showContactForm &&
         <ContactPopup />
       }
-      <div className="sticky bottom-0 z-10">
-        <button
-          className="w-full text-[2rem] font-bold text-black bg-secondary font-feature font-firago uppercase rounded-[1.5rem] py-[1.8rem] leading-[2.4rem] cursor-pointer lg:hidden"
-          onClick={() => { toggleShowContactForm() }}
-        >
-          {coverContent.button}
-        </button>
-      </div>
+      <ContactButton />
     </div>
   );
 };

@@ -14,7 +14,7 @@ export const Contact = ({ variant }: contact) => {
   const contactContent = data[language].contact;
 
   return (
-    <div className="pb-0 scroll-mt-[8.1rem] lg:px-[6rem] font-firago xl:px-[10rem] "
+    <div className="pb-0 scroll-mt-[8.1rem] lg:scroll-mt-[13rem] xl:scroll-mt-[17.6rem] lg:px-[6rem] font-firago xl:px-[10rem] "
       id="contact">
       <h3 className="hidden lg:block uppercase text-[2rem] font-bold font-feature pb-[4rem] text-black dark:text-white lg:text-[3rem]">{contactContent.title}</h3>
       <div className="lg:flex lg:items-start lg:justify-left gap-[11.1rem] xl:gap-[14.7rem]">

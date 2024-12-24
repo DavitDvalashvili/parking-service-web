@@ -13,8 +13,7 @@ export const ServicesMobile = () => {
 
   return (
     <div
-      className="bg-white text-black dark:bg-dark-brown dark:text-white px-8 font-firago font-bold  uppercase scroll-mt-[8.1rem] "
-      id="service"
+      className="bg-white text-black dark:bg-dark-brown dark:text-white px-8 font-firago font-bold  uppercase "
     >
       <h3 className="pt-[0.7rem] pb-[2rem] text-center text-[2rem]">
         {serviceContent.title}

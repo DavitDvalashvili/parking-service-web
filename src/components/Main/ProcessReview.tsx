@@ -7,7 +7,7 @@ export const ProcessReview = () => {
   const processContent = data[language].process;
 
   return (
-    <div className="pt-8 font-firago px-8 flex justify-center dark:bg-dark-brown scroll-mt-[8.1rem] lg:block lg:pt-[8rem] lg:px-0">
+    <div className="pt-8 font-firago px-8 flex justify-center dark:bg-dark-brown scroll-mt-[8.1rem] lg:scroll-mt-[13rem] xl:scroll-mt-[17.6rem] lg:block lg:pt-[8rem] lg:px-0">
       <h3 className="hidden lg:block font-bold text-black dark:text-white text-[2rem] text-left lg:pb-[4.5rem] lg:px-[6rem] uppercase xl:text-[3rem]
       font-feature xl:px-[10rem] xl:pb-[3rem]">{processContent.title}</h3>
       <div

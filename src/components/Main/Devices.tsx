@@ -10,7 +10,7 @@ export const Devices = () => {
 
   return (
     <div
-      className="dark:bg-dark-brown bg-white font-firago pt-8 scroll-mt-[8.1rem]  lg:pt-[8rem] pl-[1.6rem] lg:pl-[6rem] xl:pl-[10rem]"
+      className="dark:bg-dark-brown bg-white font-firago pt-8 scroll-mt-[8.1rem] lg:scroll-mt-[13rem] xl:scroll-mt-[17.6rem]  lg:pt-[8rem] pl-[1.6rem] lg:pl-[6rem] xl:pl-[10rem]"
       id="device"
     >
       <h3 className="font-bold text-[2rem] font-feature text-center capitalize dark:text-white pb-8 lg:text-left xl:pb-[4rem] xl:text-[3rem] ">

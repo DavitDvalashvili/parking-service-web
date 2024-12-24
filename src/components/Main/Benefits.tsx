@@ -9,7 +9,7 @@ export const Benefits = () => {
 
   return (
     <div
-      className="bg-white dark:bg-dark-brown text-black font-firago pt-8 scroll-mt-[8.1rem] 
+      className="bg-white dark:bg-dark-brown text-black font-firago pt-8 scroll-mt-[8.1rem] lg:scroll-mt-[13rem] xl:scroll-mt-[17.6rem] 
       xl:pt-10 pl-[1.6rem] lg:pl-[6rem] xl:pl-[10rem]"
       id="about"
     >
