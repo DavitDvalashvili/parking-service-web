@@ -22,7 +22,7 @@ export const Home = () => {
   return (
     <div className="max-w-[76.8rem] mx-auto lg:max-w-[192rem]">
       <div
-        className="font-bold text-[2rem] font-firago font-feature pt-4  text-black dark:text-white dark:bg-dark-brown  scroll-mt-[8.1rem] mt-[8.1rem] 
+        className="font-bold text-[2rem] font-firago font-feature pt-4  text-black dark:text-white dark:bg-dark-darkBrown  scroll-mt-[8.1rem] mt-[8.1rem] 
         lg:mt-[13rem] xl:mt-[17.6rem] lg:pt-0 xl:pt-[4rem] lg:border-b lg:border-b-black lg:dark:border-transparent"
         id="main"
       >

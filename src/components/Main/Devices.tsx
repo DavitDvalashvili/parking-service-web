@@ -17,10 +17,10 @@ export const Devices = () => {
         {deviceContent.title}
       </h3>
 
-      <Swiper slidesPerView={"auto"} spaceBetween={0} className="pr-[1.6rem]  lg:pr-[-5.4rem]  xl:pr-[7.25rem] ">
+      <Swiper slidesPerView={"auto"} spaceBetween={0} className="pr-[1.6rem]  lg:pr-[-5.4rem]  xl:pr-[7.25rem] md:flex md:justify-center lg:gap-[10rem] xl:lg:gap-[14.5rem]">
         {deviceContent.devices.map((device, index) => (
           <SwiperSlide key={index}>
-            <div className="w-[20.8rem] rounded-[1rem] mx-[0.4rem] pt-[1.1rem] shadow-customShadow lg:w-[16rem] xl:w-[20rem] lg:shadow-none lg:pt-0 border border-black  
+            <div className="w-[20.8rem] rounded-[1rem] mx-[0.4rem] pt-[1.1rem] shadow-customShadow lg:w-[16rem] xl:w-[20rem] lg:shadow-none lg:pt-0
             lg:mx-[10rem] xl:mx-[14.5rem]">
               <img
                 src={device.image}

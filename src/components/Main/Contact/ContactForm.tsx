@@ -99,7 +99,7 @@ export const ContactForm = ({ variant }: contact) => {
                                     ? firstNameErr
                                     : contactContent.placeholders.firstName
                             }
-                            className={`w-full h-8 focus:outline-none text-black font-medium lg:h-[2rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.875rem] lg:dark:text-white ${firstNameErr
+                            className={`w-full h-8 focus:outline-none text-black font-medium lg:h-[2rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.8rem] lg:dark:text-white ${firstNameErr
                                 ? "placeholder:text-errorRed "
                                 : "placeholder:text-placeholder lg:placeholder:text-transparent"
                                 } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white lg:dark:bg-dark-brown "}`}
@@ -123,7 +123,7 @@ export const ContactForm = ({ variant }: contact) => {
                             placeholder={
                                 lastNameErr ? lastNameErr : contactContent.placeholders.lastName
                             }
-                            className={`w-full h-8 focus:outline-none text-black font-medium lg:h-[2rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.875rem] lg:dark:text-white ${lastNameErr
+                            className={`w-full h-8 focus:outline-none text-black font-medium lg:h-[2rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.8rem] lg:dark:text-white ${lastNameErr
                                 ? "placeholder:text-errorRed"
                                 : "placeholder:text-placeholder lg:placeholder:text-transparent"
                                 } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white lg:dark:bg-dark-brown"} `}
@@ -149,7 +149,7 @@ export const ContactForm = ({ variant }: contact) => {
                             placeholder={
                                 emailErr ? emailErr : contactContent.placeholders.email
                             }
-                            className={`w-full h-8 focus:outline-none text-black font-medium lg:h-[2rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.875rem] lg:dark:text-white ${emailErr
+                            className={`w-full h-8 focus:outline-none text-black font-medium lg:h-[2rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.8rem] lg:dark:text-white ${emailErr
                                 ? "placeholder:text-errorRed"
                                 : "placeholder:text-placeholder lg:placeholder:text-transparent"
                                 } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white lg:dark:bg-dark-brown"}`}
@@ -176,7 +176,7 @@ export const ContactForm = ({ variant }: contact) => {
                             placeholder={
                                 numberErr ? numberErr : contactContent.placeholders.phoneNumber
                             }
-                            className={`w-full h-8 focus:outline-none text-black font-medium lg:h-[2rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.875rem] lg:dark:text-white ${numberErr
+                            className={`w-full h-8 focus:outline-none text-black font-medium lg:h-[2rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.8rem] lg:dark:text-white ${numberErr
                                 ? "placeholder:text-errorRed"
                                 : "placeholder:text-placeholder lg:placeholder:text-transparent"
                                 } ${isPopup ? "dark:bg-dark-brown" : "dark:bg-white lg:dark:bg-dark-brown"} `}
@@ -194,13 +194,13 @@ export const ContactForm = ({ variant }: contact) => {
                         value={formData.message}
                         placeholder={contactContent.placeholders.message}
                         className={`${isPopup ? "dark:bg-dark-brown" : "dark:bg-white lg:dark:bg-dark-brown"} w-full h-[5.6rem] focus:outline-none placeholder:text-placeholder text-black font-medium
-                        lg:text-[1.2rem] xl:text-[1.4rem] lg:mt-[0.8rem] lg:placeholder:text-transparent lg:dark:text-white`}
+                        lg:text-[1.2rem] xl:text-[1.4rem] lg:my-[0.8rem] lg:placeholder:text-transparent lg:dark:text-white lg:h-[2rem]`}
                     />
                 </div>
                 <button
                     type="submit"
                     className={`mt-4 lg:mt-2 text-[1.2rem] leading-8 font-medium text-white bg-primary dark:text-black dark:bg-secondary w-[19.7rem] h-[4.1rem] rounded-[2rem] mx-auto cursor-pointer border border-[#FFCA40]  uppercase 
-                       lg:w-[21.4rem]b lg:h-[5.4rem] lg:text-[1.6rem] lg:font-bold lg:border-none lg:mx-0 lg:ml-auto ${isPopup ? "w-full" : ""}`}
+                       lg:w-[21.4rem]b lg:h-[5.4rem] lg:text-[1.6rem] lg:font-bold lg:border-none lg:mx-0 lg:ml-auto xl:mt-[-0.5rem] ${isPopup ? "w-full" : ""}`}
                     onClick={() => {
                         handleError();
                     }}
