@@ -18,6 +18,7 @@ export default {
           darkBrown: "#101419",
         },
         placeholder: "#898A8A",
+        popupBackground: "rgba(0, 0, 0, 0.59)",
       },
       screens: {
         md: "768px",
@@ -30,8 +31,13 @@ export default {
         "desktop-light": "url('/images/cover/coverDesktopLight.svg')",
         "desktop-dark": "url('/images/cover/coverDesktopDark.svg')",
         "benefit-card": "url('/images/benefits/parkingBg.svg')",
-        "footer-bg-light": "url('/images/footer/bgPatternLight.svg')",
-        "footer-bg-dark": "url('/images/footer/bgPatternDark.svg')",
+        "letter-dark": "url('/images/contact/letterSendDark.svg')",
+        "letter-light": "url('/images/contact/letterSendLight.svg')",
+        "footer-desktopBg-dark": "url('/images/footer/desktopPatternDark.svg')",
+        "footer-desktopBg-light":
+          "url('/images/footer/desktopPatternLight.svg')",
+        "footer-mobileBg-dark": "url('/images/footer/mobilePatternDark.svg')",
+        "footer-mobileBg-light": "url('/images/footer/mobilePatternLight.svg')",
       },
       boxShadow: {
         customShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
