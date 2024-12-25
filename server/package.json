@@ -1,0 +1,11 @@
+{
+  "name": "parking_service_website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Logical systems LLC",
+  "license": "ISC",
+  "description": "parking service website"
+}
