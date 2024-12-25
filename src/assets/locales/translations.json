@@ -163,77 +163,43 @@
       "address": "მარშალ გელოვანის ქუჩა #2, თბილისი, საქართველო",
       "terms": "წესები და პირობები"
     },
-    "devicesPage": [
-      {
-        "images": [
-          {
-            "image1": "1"
-          },
-          {
-            "image2": "2"
-          },
-          {
-            "image3": "3"
-          }
-        ],
-        "name": "მოწყობილობა1",
-        "paragraph1": "ავტოსადგომის ბილეთების გამცემი S200 სერია არის მოწყობილობა, რომელიც გამოიყენება ავტოსადგომებში შესასვლელების მართვისთვის და ტრანსპორტის დაშვების გასაკონტროლებლად. იგი, როგორც წესი, ინსტალირდება ავტომატური ბარიერთან ერთად.",
-        "paragraph2": "ავტოსადგომის შესასვლელი სვეტი დამზადებულია ძლიერი რკინის კორპუსით, რომელიც კარგად ფუნქციონირებს როგორც შიგნით, ისე გარეთ. მისი ყურადღებით გაწერილი დიზაინი და უახლესი მოდელის კომპონენტები გვაძლევს საშუალებას შემოგთავაზოთ ყველაზე პატარა და კომპაქტური მოწყობილობა.",
-        "paragraph3": "მოკლედ, ეს არის მოწყობილობა, რომელიც მოიცავს უახლეს ტექნოლოგიებს, რაც თანამედროვე ავტოსადგომს სჭირდება, დაწყებული ტელეფონის გამოყენებით დაშვების ტექნოლოგიით, დასრულებული სანომრე ნიშნების ამოცნობისთვის განკუთვნილი LPR კამერით.",
-        "bullets": [
-          { "bullet1": "მრავალფეროვანი დაშვების მეთოდები" },
-          { "bullet2": "კომპაქტური და მცირე ზომის მოწყობილობა." },
-          { "bullet3": "სანომრე ნიშნების ამოცნობა." },
-          { "bullet3": "შესასვლელის მითითების LED შუქნიშანი." }
-        ]
-      },
-      {
-        "images": [
-          {
-            "image1": "1"
-          },
-          {
-            "image2": "2"
-          },
-          {
-            "image3": "3"
-          }
-        ],
-        "name": "მოწყობილობა2",
-        "paragraph1": "ავტოსადგომის ბილეთების გამცემი S200 სერია არის მოწყობილობა, რომელიც გამოიყენება ავტოსადგომებში შესასვლელების მართვისთვის და ტრანსპორტის დაშვების გასაკონტროლებლად. იგი, როგორც წესი, ინსტალირდება ავტომატური ბარიერთან ერთად.",
-        "paragraph2": "ავტოსადგომის შესასვლელი სვეტი დამზადებულია ძლიერი რკინის კორპუსით, რომელიც კარგად ფუნქციონირებს როგორც შიგნით, ისე გარეთ. მისი ყურადღებით გაწერილი დიზაინი და უახლესი მოდელის კომპონენტები გვაძლევს საშუალებას შემოგთავაზოთ ყველაზე პატარა და კომპაქტური მოწყობილობა.",
-        "paragraph3": "მოკლედ, ეს არის მოწყობილობა, რომელიც მოიცავს უახლეს ტექნოლოგიებს, რაც თანამედროვე ავტოსადგომს სჭირდება, დაწყებული ტელეფონის გამოყენებით დაშვების ტექნოლოგიით, დასრულებული სანომრე ნიშნების ამოცნობისთვის განკუთვნილი LPR კამერით.",
-        "bullets": [
-          { "bullet1": "მრავალფეროვანი დაშვების მეთოდები" },
-          { "bullet2": "კომპაქტური და მცირე ზომის მოწყობილობა." },
-          { "bullet3": "სანომრე ნიშნების ამოცნობა." },
-          { "bullet3": "შესასვლელის მითითების LED შუქნიშანი." }
-        ]
-      },
-      {
-        "images": [
-          {
-            "image1": "1"
-          },
-          {
-            "image2": "2"
-          },
-          {
-            "image3": "3"
-          }
-        ],
-        "name": "მოწყობილობა3",
-        "paragraph1": "ავტოსადგომის ბილეთების გამცემი S200 სერია არის მოწყობილობა, რომელიც გამოიყენება ავტოსადგომებში შესასვლელების მართვისთვის და ტრანსპორტის დაშვების გასაკონტროლებლად. იგი, როგორც წესი, ინსტალირდება ავტომატური ბარიერთან ერთად.",
-        "paragraph2": "ავტოსადგომის შესასვლელი სვეტი დამზადებულია ძლიერი რკინის კორპუსით, რომელიც კარგად ფუნქციონირებს როგორც შიგნით, ისე გარეთ. მისი ყურადღებით გაწერილი დიზაინი და უახლესი მოდელის კომპონენტები გვაძლევს საშუალებას შემოგთავაზოთ ყველაზე პატარა და კომპაქტური მოწყობილობა.",
-        "paragraph3": "მოკლედ, ეს არის მოწყობილობა, რომელიც მოიცავს უახლეს ტექნოლოგიებს, რაც თანამედროვე ავტოსადგომს სჭირდება, დაწყებული ტელეფონის გამოყენებით დაშვების ტექნოლოგიით, დასრულებული სანომრე ნიშნების ამოცნობისთვის განკუთვნილი LPR კამერით.",
-        "bullets": [
-          { "bullet1": "მრავალფეროვანი დაშვების მეთოდები" },
-          { "bullet2": "კომპაქტური და მცირე ზომის მოწყობილობა." },
-          { "bullet3": "სანომრე ნიშნების ამოცნობა." },
-          { "bullet3": "შესასვლელის მითითების LED შუქნიშანი." }
-        ]
-      }
-    ]
+    "devicesPage": {
+      "images": [
+        {
+          "image": "/images/devices/device01.svg",
+          "id": 1
+        },
+        {
+          "image": "/images/devices/device02.svg",
+          "id": 2
+        },
+        {
+          "image": "/images/devices/device03.svg",
+          "id": 3
+        },
+        {
+          "image": "/images/devices/device03.svg",
+          "id": 3
+        },
+        {
+          "image": "/images/devices/device02.svg",
+          "id": 2
+        }
+      ],
+      "name": "მოწყობილობა1",
+      "button": "დაგვიკავშირდით",
+      "title": "მსგავსი პროდუქტები",
+      "detailButton": "დეტალურად",
+      "paragraph1": "ავტოსადგომის ბილეთების გამცემი S200 სერია არის მოწყობილობა, რომელიც გამოიყენება ავტოსადგომებში შესასვლელების მართვისთვის და ტრანსპორტის დაშვების გასაკონტროლებლად. იგი, როგორც წესი, ინსტალირდება ავტომატური ბარიერთან ერთად.",
+      "paragraph2": "ავტოსადგომის შესასვლელი სვეტი დამზადებულია ძლიერი რკინის კორპუსით, რომელიც კარგად ფუნქციონირებს როგორც შიგნით, ისე გარეთ. მისი ყურადღებით გაწერილი დიზაინი და უახლესი მოდელის კომპონენტები გვაძლევს საშუალებას შემოგთავაზოთ ყველაზე პატარა და კომპაქტური მოწყობილობა.",
+      "paragraph3": "მოკლედ, ეს არის მოწყობილობა, რომელიც მოიცავს უახლეს ტექნოლოგიებს, რაც თანამედროვე ავტოსადგომს სჭირდება, დაწყებული ტელეფონის გამოყენებით დაშვების ტექნოლოგიით, დასრულებული სანომრე ნიშნების ამოცნობისთვის განკუთვნილი LPR კამერით.",
+      "bullets": [
+        { "bullet": "მრავალფეროვანი დაშვების მეთოდები" },
+        { "bullet": "კომპაქტური და მცირე ზომის მოწყობილობა." },
+        { "bullet": "სანომრე ნიშნების ამოცნობა." },
+        { "bullet": "შესასვლელის მითითების LED შუქნიშანი." }
+      ]
+    }
   },
   "En": {
     "header": {
@@ -399,76 +365,34 @@
       "address": "Marshal Gelovani Street #2, Tbilisi, Georgia",
       "terms": "Privacy and Policy"
     },
-    "devicesPage": [
-      {
-        "images": [
-          {
-            "image1": "1"
-          },
-          {
-            "image2": "2"
-          },
-          {
-            "image3": "3"
-          }
-        ],
-        "name": "device1",
-        " paragraph1": "The car park ticket dispenser serie S200 is an equipment used in entryways to parking to control vehicle access. It is usually installed with an automatic barier.",
-        " paragraph2": "The entry column to the car park column is built with a sturdy iron body, working properly both indoors and outdoors. Its careful design and its latest model components allows us to offer one of the smallest and compact machines.",
-        " paragraph3": "In short, this is an equipment that includes the latest technology that a modern car park needs, from technology for access the parking with the phone, to a LPR camera for recognition license plates.",
-        "bullets": [
-          { "bullet1": "Multiple access methods" },
-          { "bullet2": "Compact and small size equipment." },
-          { "bullet3": "License plate recognition." },
-          { "bullet3": "LED traffic light to indicate the access." }
-        ]
-      },
-      {
-        "images": [
-          {
-            "image1": "1"
-          },
-          {
-            "image2": "2"
-          },
-          {
-            "image3": "3"
-          }
-        ],
-        "name": "device2",
-        " paragraph1": "The car park ticket dispenser serie S200 is an equipment used in entryways to parking to control vehicle access. It is usually installed with an automatic barier.",
-        " paragraph2": "The entry column to the car park column is built with a sturdy iron body, working properly both indoors and outdoors. Its careful design and its latest model components allows us to offer one of the smallest and compact machines.",
-        " paragraph3": "In short, this is an equipment that includes the latest technology that a modern car park needs, from technology for access the parking with the phone, to a LPR camera for recognition license plates.",
-        "bullets": [
-          { "bullet1": "Multiple access methods" },
-          { "bullet2": "Compact and small size equipment." },
-          { "bullet3": "License plate recognition." },
-          { "bullet3": "LED traffic light to indicate the access." }
-        ]
-      },
-      {
-        "images": [
-          {
-            "image1": "1"
-          },
-          {
-            "image2": "2"
-          },
-          {
-            "image3": "3"
-          }
-        ],
-        "name": "device3",
-        " paragraph1": "The car park ticket dispenser serie S200 is an equipment used in entryways to parking to control vehicle access. It is usually installed with an automatic barier.",
-        " paragraph2": "The entry column to the car park column is built with a sturdy iron body, working properly both indoors and outdoors. Its careful design and its latest model components allows us to offer one of the smallest and compact machines.",
-        " paragraph3": "In short, this is an equipment that includes the latest technology that a modern car park needs, from technology for access the parking with the phone, to a LPR camera for recognition license plates.",
-        "bullets": [
-          { "bullet1": "Multiple access methods" },
-          { "bullet2": "Compact and small size equipment." },
-          { "bullet3": "License plate recognition." },
-          { "bullet3": "LED traffic light to indicate the access." }
-        ]
-      }
-    ]
+    "devicesPage": {
+      "images": [
+        {
+          "image": "/images/devices/device01.svg",
+          "id": 1
+        },
+        {
+          "image": "/images/devices/device02.svg",
+          "id": 2
+        },
+        {
+          "image": "/images/devices/device03.svg",
+          "id": 3
+        }
+      ],
+      "name": "Car parking ticke machine 1",
+      "button": "Contact",
+      "detailButton": "In Detail",
+      "title": "Similar Products",
+      "paragraph1": "The car park ticket dispenser serie S200 is an equipment used in entryways to parking to control vehicle access. It is usually installed with an automatic barier.",
+      "paragraph2": "The entry column to the car park column is built with a sturdy iron body, working properly both indoors and outdoors. Its careful design and its latest model components allows us to offer one of the smallest and compact machines.",
+      "paragraph3": "In short, this is an equipment that includes the latest technology that a modern car park needs, from technology for access the parking with the phone, to a LPR camera for recognition license plates.",
+      "bullets": [
+        { "bullet": "Multiple access methods" },
+        { "bullet": "Compact and small size equipment." },
+        { "bullet": "License plate recognition." },
+        { "bullet": "LED traffic light to indicate the access." }
+      ]
+    }
   }
 }
